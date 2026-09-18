@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft 365 Copilot 新功能速覽 | 2026 年 4 月</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/language-switcher.css">
+</head>
+<body class="page-month">
+<div class="wrap">
+<nav class="language-switcher" aria-label="語言切換">
+<a href="2026-04.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="2026-04-tc.html" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文</a>
+<a href="2026-04-en.html" lang="en" hreflang="en">English</a>
+</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 id="month-navigation-title">月度導覽</h2>
+    <nav class="month-links" aria-labelledby="month-navigation-title">
+      <a href="2026-08-tc.html">2026 年 8 月</a>
+      <a href="2026-07-tc.html">2026 年 7 月</a>
+      <a href="2026-06-tc.html">2026 年 6 月</a>
+      <a href="2026-05-tc.html">2026 年 5 月</a>
+      <a href="2026-04-tc.html" aria-current="page">2026 年 4 月</a>
+    </nav>
+    <a class="back" href="index-tc.html">&#8592; 返回月份總目錄</a>
+  </aside>
+  <main class="content" id="main">
+
+<header class="hero">
+  <p class="kicker">MICROSOFT 365 COPILOT 博客</p>
+  <h1>Microsoft 365 Copilot 新功能速覽 | 2026 年 4 月</h1>
+  <p class="meta">作者：Seth Patton（Microsoft）· 發佈日期：2026 年 4 月 30 日 ·
+  <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--april-2026/4510935" target="_blank" rel="noopener">查看英文原文</a></p>
+</header>
+
+<p class="lead">本文為 Microsoft 365 Copilot 官方月度更新（2026 年 4 月刊）的中文整理版。每月我們都會梳理新增功能與改進，幫助 Microsoft 365 管理員及時瞭解 Copilot 的最新能力，讓用戶在日常所用的應用中更高效地完成工作。</p>
+<figure class="banner"><img src="assets/2026-04/bS00NTEwOTM1LTExZ0liNA.png" alt="文章配圖" loading="lazy" width="812" height="169"></figure>
+
+<nav class="toc" id="monthly-overview" aria-labelledby="monthly-overview-title" tabindex="-1">
+  <h2 id="monthly-overview-title">本月更新概覽</h2>
+  <strong>面向用戶的能力</strong>
+  <ul>
+    <li><a href="#m365app">Microsoft 365 Copilot 應用：移動端改版與數據接地能力</a></li>
+    <li><a href="#notebooks">Copilot Notebooks 迎來一大波更新</a></li>
+    <li><a href="#excel">Excel 中的 Copilot：計劃模式與 Python 支持</a></li>
+    <li><a href="#ppt">PowerPoint 中的 Copilot：圖像編輯選項與公開網頁接地</a></li>
+    <li><a href="#word">Word 中的 Copilot：新增 Claude 模型</a></li>
+    <li><a href="#teams">Teams 中的 Copilot：來電代接與交替傳譯</a></li>
+    <li><a href="#onedrive">OneDrive 中的 Copilot：開箱即用的提示詞</a></li>
+    <li><a href="#agentstore">通過 Agent Builder 向 Agent Store 提交代理</a></li>
+    <li><a href="#outlook">Outlook 中的 Copilot：直接在畫布中生成初稿</a></li>
+  </ul>
+  <strong>面向管理員的管控能力</strong>
+  <ul>
+    <li><a href="#dashboard">Copilot 儀表板：按天導出與重度用戶洞察</a></li>
+    <li><a href="#admin">Microsoft 365 管理中心：計費管理與組織消息新選項</a></li>
+  </ul>
+</nav>
+
+<h2>面向用戶的能力</h2>
+
+<section class="card">
+<h3 id="m365app">Microsoft 365 Copilot 應用：移動端改版與數據接地能力</h3>
+
+<p><strong>移動應用全新「聊天優先」設計</strong><span class="tag soon">5 月推出</span><br>
+Microsoft 365 Copilot 移動應用採用了全新的「聊天優先」界面，整體更清爽、更符合直覺。此次更新為提示詞輸入增加了文本格式支持，並採用新的版式讓回覆更易於查看、複製、重新打開以及通過引文追溯來源。應用菜單也做了精簡，用戶可以更輕鬆地在各項 Copilot 體驗之間切換。整體觀感更為現代，採用了「液態玻璃」風格，語音對話也有了全新的可視化呈現。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LWxHcEU3eA.png" alt="Microsoft 365 Copilot 移動應用的全新「聊天優先」界面" loading="lazy" width="999" height="670"><figcaption>Microsoft 365 Copilot 移動應用的全新「聊天優先」界面</figcaption></figure>
+
+<p><strong>在 Copilot Pages 中用 Work IQ 生成交互式可視化與應用</strong><span class="tag done">4 月已推出</span><br>
+此前用戶已經可以在 Copilot Pages 中基於 Web 數據接地，創建並預覽輕量級儀表板、報表和可視化等交互內容。現在，用戶可以藉助 Work IQ 來生成這些交互式可視化與應用，無需離開頁面即可探索和迭代。當需要進一步配置和管理該產物時，可以直接從頁面打開 App Builder。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LU1IRjV0dQ.png" alt="在 Copilot Pages 中生成的交互式可視化" loading="lazy" width="999" height="534"><figcaption>在 Copilot Pages 中生成的交互式可視化</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="notebooks">Copilot Notebooks 迎來一大波更新</h3>
+
+<p><span class="tag soon">4—5 月陸續推出</span>Copilot Notebooks 面向已加入 Frontier 計劃的用戶推出了一系列預覽功能，覆蓋內容創建、協作與學習三大場景，包括：引用 SharePoint 內容與 OneNote 筆記本、用 Copilot 編輯 Copilot Pages、基於筆記本內容生成 Word 文檔或 PowerPoint 演示文稿、將筆記本共享給 Microsoft 365 組，以及通過思維導圖和學習工具探索內容。</p>
+
+<ul class="feat">
+  <li><strong>通過聊天創建和編輯 Copilot Pages</strong><span class="tag soon">5 月推出</span><br>
+  用戶不必再手動編輯頁面，只需在聊天中描述想要修改或新建的內容，Copilot 就會直接在頁面上完成更新。對管理員而言，這降低了在 Web 端管理筆記本內容的學習門檻，有助於推動採用率。</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXhkcEZybA.png" alt="通過聊天創建和編輯 Copilot Pages" loading="lazy" width="998" height="562"><figcaption>通過聊天創建和編輯 Copilot Pages</figcaption></figure>
+
+  <li><strong>把外部網頁鏈接作為引用源</strong><span class="tag soon">5 月推出</span><br>
+  用戶可以粘貼 URL 作為 Notebooks 的引用來源，Copilot 會利用該網頁內容來支撐筆記本內的對話與輸出，從而把 Copilot 的接地範圍從內部內容擴展到外部網絡，在保持筆記本上下文集中的同時支持更豐富的調研。</li>
+
+  <li><strong>一鍵生成 PowerPoint 演示文稿</strong><span class="tag soon">5 月推出</span><br>
+  Copilot 可直接調用筆記本中已有的筆記、引用源和結構來起草幻燈片，成稿風格統一、已預置視覺元素、隨時可細化。用戶可以指定重點方向、詳略程度、篇幅長度以及設計主題（從示例模板中選擇），PowerPoint 代理會據此生成一份結構化、可編輯的初稿，用戶隨後在 PowerPoint 中繼續打磨。</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVpGQk5LcQ.png" alt="PowerPoint 代理基於筆記本內容生成完整幻燈片" loading="lazy" width="901" height="531"><figcaption>PowerPoint 代理基於筆記本內容生成完整幻燈片</figcaption></figure>
+
+  <li><strong>一鍵生成 Word 文檔</strong><span class="tag soon">5 月推出</span><br>
+  用戶可基於筆記本中收集的內容與引用源，快速生成報告、摘要、提案等文檔。只需在提示詞中說明需求，並自定義文檔類型、核心主題、目標讀者和風格基調，Copilot 就會生成初稿，用戶可在 Word 中打開並完成定稿。</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUxpdXdMcQ.png" alt="Notebooks 中的「快速創建」按鈕及其下拉菜單" loading="lazy" width="999" height="562"><figcaption>Notebooks 中的「快速創建」按鈕及其下拉菜單</figcaption></figure>
+
+  <li><strong>思維導圖</strong><span class="tag soon">5 月推出</span><br>
+  思維導圖以交互方式呈現整個筆記本內容中的關鍵主題及其相互關係，並有原文作為支撐。用戶可以展開節點、查看特定區域的摘要，還能讓 Copilot 就圖上內容做深入解讀，從而更快理解複雜概念與筆記。</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXlTVkw2bg.png" alt="Notebooks 中呈現三階段發佈計劃的思維導圖" loading="lazy" width="998" height="588"><figcaption>Notebooks 中呈現三階段發佈計劃的思維導圖</figcaption></figure>
+
+  <li><strong>OneNote 移動端（iOS）多模態採集</strong><span class="tag done">5 月已在 iOS 推出</span><br>
+  用戶可以在一次會話中同時採集音頻轉錄、圖片和手打筆記，特別適合線下會議、白板討論等離線場景。Copilot 隨後會把這次採集整理成一個結構化的 Copilot Page，包含洞察與用戶原始內容，並保存到指定的筆記本中。</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTdDOGowag.png" alt="OneNote 移動端多模態採集界面" loading="lazy" width="991" height="999"><figcaption>OneNote 移動端多模態採集界面</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="excel">Excel 中的 Copilot：計劃模式與 Python 支持</h3>
+
+<p><strong>計劃模式（Plan mode）</strong><span class="tag soon">5 月推出</span><br>
+計劃模式會在改動工作簿之前，先給出一份清晰的分步方案，讓用戶放心地執行復雜改動。用戶在提示詞輸入框上方的菜單中選擇「Plan」即可進入。隨後可以查看 Copilot 打算如何完成任務、會用到哪些數據或能力，並按需調整方案——確保在真正落筆之前，每一處編輯都是有意為之、透明可見且符合預期。這讓用戶在處理多步驟或影響面較大的任務時，始終掌握主動權。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LThnV2U4dQ.png" alt="Excel 中 Copilot 計劃模式的對話界面" loading="lazy" width="999" height="536"><figcaption>Excel 中 Copilot 計劃模式的對話界面</figcaption></figure>
+
+<p><strong>Python 支持</strong><span class="tag soon">5 月推出</span><br>
+現在用 Copilot 編輯 Excel 時可以調用 Python，無需離開工作簿即可完成更高階的數據分析。Copilot 在執行編輯時可運用 Python 技術來轉換數據、生成可視化並完成複雜的多步驟任務；啟用 Python 後，Copilot 還能在編輯過程中直接產出圖表等視覺結果。用戶可以在提示詞中明確要求使用 Python，Copilot 也會在必要時自動調用。</p>
+<figure><div class="vwrap"><iframe src="https://medius.microsoft.com/Embed/video-nc/7064ca25-c746-494c-8a86-124832451c59?r=501967792371" allowfullscreen loading="lazy" title="演示：Excel 中的 Copilot 調用 Python 完成分析"></iframe></div><figcaption>演示：Excel 中的 Copilot 調用 Python 完成分析（視頻來自微軟官方博客，播放需聯網）</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="ppt">PowerPoint 中的 Copilot：圖像編輯選項與公開網頁接地</h3>
+
+<p><strong>可選擇圖像生成模型</strong><span class="tag done">4 月已推出</span><br>
+在創建或編輯圖像時，用戶可以自行選擇使用哪個圖像模型，包括 GPT-Image、Flux，或者交由「自動」設置為當前需求挑選最合適的模型。用戶為幻燈片生成視覺素材或修改現有圖像時，Copilot 會把提示詞路由到所選模型並返回可繼續迭代的結果。模型選擇權讓圖像生成在質量、風格與治理要求上更好地與團隊預期對齊。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUFReEJsbg.png" alt="PowerPoint 中的 Copilot 圖像模型選擇器" loading="lazy" width="999" height="359"><figcaption>PowerPoint 中的 Copilot 圖像模型選擇器</figcaption></figure>
+
+<p><strong>Microsoft AI Image 2 Efficient 模型</strong><span class="tag done">4 月已推出</span><br>
+用戶現在可以使用 Microsoft AI Image 2 Efficient 模型編輯圖像，以更快的速度獲得高質量的創作與編輯效果。無論是從提示詞生成新視覺，還是優化已有圖像，都能快速迭代到理想的風格、調性與內容。該模型在性能和效率上的提升，讓團隊無需離開 Microsoft 365 就能產出可直接用於演示的精美視覺素材。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUY3TUZPWg.png" alt="使用 MAI Image 2 Efficient 模型創建圖像" loading="lazy" width="999" height="458"><figcaption>使用 MAI Image 2 Efficient 模型創建圖像</figcaption></figure>
+
+<p><strong>以公開網頁作為素材來源</strong><span class="tag done">4 月已推出</span><br>
+製作演示文稿時，Copilot 現在可以把公開網頁作為素材來源，用戶無需複製粘貼即可讓幻燈片基於最新的外部信息。添加網頁引用後，Copilot 會提取相關上下文，生成可繼續細化的初始大綱和幻燈片，幫助用戶在 Microsoft 365 內部就做出更準確、來源更可靠的演示文稿。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTAyTUlsTA.png" alt="Copilot 基於公開網頁生成的演示文稿" loading="lazy" width="999" height="458"><figcaption>Copilot 基於公開網頁生成的演示文稿</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="word">Word 中的 Copilot：新增 Claude 模型</h3>
+<p><span class="tag done">4 月已推出</span>Word 中的 Copilot 現已提供 Claude 模型選項，用戶在起草或編輯內容時又多了一個高質量的大模型選擇。用戶可以在 OpenAI 系列模型之外選用 Anthropic 模型，Copilot 會使用所選模型運行相同的編輯工作流。對於偏好特定模型行為的團隊來說，這在受管控的環境內提供了更多靈活性。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTZ4UnpLaQ.png" alt="Word 中的 Copilot 模型選擇器已包含 Claude 模型" loading="lazy" width="999" height="458"><figcaption>Word 中的 Copilot 模型選擇器已包含 Claude 模型</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="teams">Teams 中的 Copilot：來電代接與交替傳譯</h3>
+
+<p><strong>Copilot 來電代接（call delegation）</strong><span class="tag soon">5 月推出</span><br>
+用戶現在可以授權 Copilot 代為處理 Teams 來電。在 Teams 通話設置中啟用後，Copilot 可幫助接聽來電並向來電者瞭解背景信息，供用戶判斷是否要接。它還能通過 Microsoft Bookings 安排後續預約，確保用戶不會遺漏那些真正重要的來電者。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LU96c1huTA.png" alt="Teams 通話選項卡中的 Copilot 來電代接" loading="lazy" width="999" height="564"><figcaption>Teams 通話選項卡中的 Copilot 來電代接</figcaption></figure>
+
+<p><strong>交替傳譯（consecutive interpretation）</strong><span class="tag done">4 月已進入公開預覽</span><br>
+交替傳譯是 Microsoft Teams 口譯員（Interpreter）的一種新模式，讓使用兩種語言的會議協作更自然。在該模式下，翻譯會在每位發言人說完之後才開始，形成一種輪流交替的節奏，更貼近多語言交流中人們的真實溝通方式。此外，交替傳譯會把口譯員呈現在會議舞臺上，所有人都能看見和聽見，從而更容易跟上節奏、參與討論並保持信息同步。至此，口譯員共支持兩種模式：去年推出的實時同聲傳譯，以及這次面向來回對話場景設計的交替傳譯。</p>
+<figure><div class="vwrap"><iframe src="https://medius.microsoft.com/Embed/video-nc/168f767e-aa78-448e-a149-f9a943658120?r=144628606261" allowfullscreen loading="lazy" title="演示：Teams 口譯員的交替傳譯模式"></iframe></div><figcaption>演示：Teams 口譯員的交替傳譯模式（視頻來自微軟官方博客，播放需聯網）</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="onedrive">OneDrive 中的 Copilot：開箱即用的提示詞</h3>
+<p><span class="tag done">4 月已推出</span>OneDrive 文件預覽界面新增了可發現的 Copilot 操作入口，用戶打開文件的瞬間就能看到 Copilot 能做什麼。該功能在 SharePoint 中同樣可用，會在 Copilot 按鈕旁展示一組現成的提示詞，幫助用戶直接完成摘要、生成 FAQ 等任務，無需從零構思提示詞。這降低了 Copilot 的上手門檻，也讓不同內容類型下的使用方式更趨一致。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVdqY2NZOQ.png" alt="OneDrive 文件預覽中的現成 Copilot 提示詞" loading="lazy" width="999" height="562"><figcaption>OneDrive 文件預覽中的現成 Copilot 提示詞</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="agentstore">通過 Agent Builder 向 Agent Store 提交代理</h3>
+<p><span class="tag soon">5 月推出</span>Agent Builder 新增了提交審批流程：代理在發佈到組織的 Agent Store 目錄之前，需先提交給管理員審核批准。這既能幫助組織規模化分發高質量的內部代理，又能讓 IT 管理員保持管控。審批通過後，代理會出現在 Agent Store 的「由貴組織構建（Built by your org）」板塊中，供全組織用戶發現並安裝。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVdyNnd4aw.png" alt="Agent Builder 中的「提交到組織目錄」菜單" loading="lazy" width="404" height="471"><figcaption>Agent Builder 中的「提交到組織目錄」菜單</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="outlook">Outlook 中的 Copilot：直接在畫布中生成初稿</h3>
+<p><span class="tag done">3 月已在新版 Outlook 推出</span>Outlook 中的 Copilot 現在會直接在撰寫畫布中寫出初稿，並可與用戶持續迭代改進。它不再只是一次性生成草稿，而是就地寫作，同時就目標、受眾或語氣提出澄清性問題，再根據用戶的回答就地更新郵件內容。用戶只需幾輪快速交互即可把郵件打磨到可發送狀態，所有改動都在 Outlook 中清晰可見，既不用複製粘貼，也不會出現意外的格式問題。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXhLWXJFSw.png" alt="Outlook 中 Copilot 直接在畫布內撰寫初稿" loading="lazy" width="999" height="562"><figcaption>Outlook 中 Copilot 直接在畫布內撰寫初稿</figcaption></figure>
+</section>
+
+<h2>面向管理員的管控能力</h2>
+
+<section class="card">
+<h3 id="dashboard">Copilot 儀表板：按天導出與重度用戶洞察</h3>
+
+<p><strong>按天導出（Export by day）</strong><span class="tag soon">5 月公開預覽，8 月全球推出</span><br>
+管理員現在可以基於最新的 Copilot 採用與影響數據，更快地做出許可分配或干預調整決策。通過「按天導出」，可下載最近 28 天內按用戶和日期聚合的去標識化 Copilot 使用指標，從而在採用與許可方面做出更快、更有數據依據的判斷。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUI1S3dCVQ.png" alt="Copilot 儀表板中的「導出數據」按鈕" loading="lazy" width="999" height="951"><figcaption>Copilot 儀表板中的「導出數據」按鈕</figcaption></figure>
+
+<p><strong>重度用戶洞察（Power users insights）</strong><span class="tag soon">5 月推出</span><br>
+管理員現在可以識別出參與度最高的 Copilot 用戶，把賦能資源投向對持續採用影響最大的地方。在 Copilot 儀表板更新後的「採用（Adoption）」選項卡中，該功能會依據使用頻率和穩定性，把用戶分為重度用戶、習慣型用戶、新手用戶和未使用 Copilot 的用戶，幫助組織激活內部擁護者、發現可複製的工作流，並在全組織範圍內擴大賦能規模。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTZKcjFOdA.png" alt="Copilot 儀表板採用選項卡中的重度用戶洞察" loading="lazy" width="889" height="999"><figcaption>Copilot 儀表板採用選項卡中的重度用戶洞察</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="admin">Microsoft 365 管理中心：計費管理與組織消息新選項</h3>
+
+<p><strong>預付容量包額度作為唯一計費方式</strong><span class="tag done">4 月已推出</span><br>
+Microsoft 365 管理中心新增支持：在受支持的 Copilot 按量付費體驗中，可將預付容量包額度設為唯一的計費方式，從而在啟用按用量計費場景的同時避免產生額外的按量付費開銷。管理員可以創建容量包策略，確保被策略覆蓋的用戶只從可用的預付額度中扣減用量，讓支出更可預測、更貼合內部預算。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXhTN1ZKbQ.png" alt="Microsoft 365 管理中心的「計費與用量」頁面" loading="lazy" width="999" height="562"><figcaption>Microsoft 365 管理中心的「計費與用量」頁面</figcaption></figure>
+
+<p><strong>組織消息支持郵件投遞</strong><span class="tag done">4 月已推出</span><br>
+Microsoft 365 管理中心的組織消息（Organizational messages）在任務欄、Spotlight、通知、Teams 彈出提示等 Windows 觸點之外，現已支持通過電子郵件投遞。這為管理員提供了又一個用戶熟悉的溝通渠道，同時消息管理仍集中在同一套工作流中。新增郵件渠道擴大了觸達範圍，也減少了對獨立工具的依賴，簡化了變更溝通。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTE2Y0xLWQ.png" alt="組織消息中預置的六週郵件模板內容" loading="lazy" width="341" height="273"><figcaption>組織消息中預置的六週郵件模板內容</figcaption></figure>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTVEWHBGWQ.png" alt="管理中心中組織消息可投放的五個位置" loading="lazy" width="312" height="519"><figcaption>管理中心中組織消息可投放的五個位置</figcaption></figure>
+
+<p><strong>組織消息支持用戶細分（user segments）</strong><span class="tag done">4 月已推出</span><br>
+管理員現在可以基於動態的、由使用行為驅動的受眾來定向投放組織消息，而不再侷限於靜態用戶組。例如，可以專門面向「尚未嘗試過某項功能」的用戶推送消息，讓溝通更具相關性、時機更恰當。這有助於提升參與度，同時把噪音降到最低——用對的消息觸達對的人。</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVUwRlRXTA.png" alt="管理中心中為組織消息選擇目標用戶細分" loading="lazy" width="862" height="457"><figcaption>管理中心中為組織消息選擇目標用戶細分</figcaption></figure>
+</section>
+
+<div class="note">
+<strong>你知道嗎？</strong> <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" rel="noopener">Microsoft 365 路線圖</a> 提供生產力應用和智能雲服務的最新動態；<a href="https://learn.microsoft.com/microsoft-365-copilot/release-notes" target="_blank" rel="noopener">Microsoft 365 Copilot 發行說明</a> 則列出了各平臺上已正式發佈（Microsoft 365 應用的當前頻道）的 Copilot 功能。建議定期查看，瞭解哪些功能正在開發中、即將推出或已正式可用。請注意，本文提及的時間均為暫定，可能會有調整。
+</div>
+
+<footer>
+<p>本頁為英文原文的中文整理版，內容與截止日期以官方原文為準。<br>
+原文標題：<em>What's New in Microsoft 365 Copilot | April 2026</em>，作者 Seth Patton，發佈於 Microsoft Tech Community（2026 年 4 月 30 日，5 月 13 日更新）。<br>
+原文鏈接：<a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--april-2026/4510935" target="_blank" rel="noopener">techcommunity.microsoft.com</a></p>
+</footer>
+  </main>
+</div>
+
+</div>
+<a class="back-to-overview" href="#monthly-overview" aria-label="返回本月更新概覽" title="返回本月更新概覽">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 7 5-5 5 5M12 2v12M4 17h16M4 22h16"/></svg>
+  <span>返回概覽</span>
+</a>
+</body>
+</html>

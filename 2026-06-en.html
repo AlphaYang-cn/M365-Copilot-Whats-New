@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft 365 Copilot: What’s New | June 2026</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/language-switcher.css">
+</head>
+<body class="page-month">
+<div class="wrap">
+<nav class="language-switcher" aria-label="Language selection">
+<a href="2026-06.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="2026-06-tc.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+<a href="2026-06-en.html" lang="en" hreflang="en" aria-current="page">English</a>
+</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 id="month-navigation-title">Monthly navigation</h2>
+    <nav class="month-links" aria-labelledby="month-navigation-title">
+      <a href="2026-08-en.html">August 2026</a>
+      <a href="2026-07-en.html">July 2026</a>
+      <a href="2026-06-en.html" aria-current="page">June 2026</a>
+      <a href="2026-05-en.html">May 2026</a>
+      <a href="2026-04-en.html">April 2026</a>
+    </nav>
+    <a class="back" href="index-en.html">&#8592; All months</a>
+  </aside>
+  <main class="content" id="main">
+
+<header class="hero">
+  <p class="kicker">MICROSOFT 365 COPILOT BLOG</p>
+  <h1>Microsoft 365 Copilot: What’s New | June 2026</h1>
+  <p class="meta">By Seth Patton (Microsoft) · Published June 30, 2026 ·
+  <a href="https://techcommunity.microsoft.com/blog/Microsoft365CopilotBlog/what%E2%80%99s-new-in-microsoft-365-copilot--june-2026/4529572" target="_blank" rel="noopener">Read the original article</a></p>
+</header>
+
+<p class="lead">This is the English edition of the Chinese compilation of Microsoft 365 Copilot’s official monthly update for June 2026. Each month, we review new features and improvements to help Microsoft 365 customers stay current with the latest Copilot capabilities and enable users to work more efficiently in the apps they use every day.</p>
+<figure class="banner"><img src="assets/2026-06/bS00NTI5NTcyLWZLSFFUZw.png" alt="Article image" loading="lazy" width="999" height="208"></figure>
+
+<nav class="toc" id="monthly-overview" aria-labelledby="monthly-overview-title" tabindex="-1">
+  <h2 id="monthly-overview-title">This month at a glance</h2>
+  <strong>User capabilities</strong>
+  <ul>
+    <li><a href="#cowork">Copilot Cowork reaches general availability (GA)</a></li>
+    <li><a href="#chat">Copilot app and Chat: enhanced citations and reasoning</a></li>
+    <li><a href="#notebooks">Copilot Notebooks: new reference sources and broader availability</a></li>
+    <li><a href="#outlook">Copilot in Outlook: settings access and targeted refinement</a></li>
+    <li><a href="#word">Copilot in Word: enhanced document editing</a></li>
+    <li><a href="#ppt">Copilot in PowerPoint: brand kits, skills, and reference sources</a></li>
+    <li><a href="#excel">Copilot in Excel: skills, personalization, and rules sheets</a></li>
+    <li><a href="#agents">Copilot agents: Planner agent launches and model selection for Researcher</a></li>
+  </ul>
+  <strong>IT admin capabilities</strong>
+  <ul>
+    <li><a href="#admin">Microsoft 365 admin center: new adoption and management capabilities</a></li>
+    <li><a href="#purview">Purview Data Loss Prevention: external email restrictions and Cowork controls</a></li>
+  </ul>
+</nav>
+
+<h2>User capabilities</h2>
+
+<section class="card">
+<h3 id="cowork">Copilot Cowork reaches general availability (GA)</h3>
+
+<div class="highlight">
+Copilot Cowork, an agentic system that can autonomously plan, execute, and deliver real work outcomes, is now generally available worldwide. Users simply define a task, and Cowork carries it through from start to finish, delivering a <strong>finished product</strong> rather than a draft or recommendation. Cowork is powered by Work IQ, and every task is grounded in the systems the enterprise actually runs, so its output reflects real business context. Cowork uses usage-based billing, and admins can monitor credit consumption, manage budgets, and control spending through the new <strong>cost management dashboard</strong> in the Microsoft 365 admin center.
+</div>
+
+<ul class="feat">
+  <li><strong>Switch between Chat and Cowork with one click</strong><span class="tag done">Rolled out in June</span><br>
+  A new toggle in the Microsoft 365 Copilot app lets users switch easily between Chat and Cowork—the former focuses on “getting answers,” while the latter focuses on “taking action.”</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXF1cFJxcQ.png" alt="Copilot Cowork home page and Chat / Cowork toggle" loading="lazy" width="999" height="704"><figcaption>Copilot Cowork home page and Chat / Cowork toggle</figcaption></figure>
+
+  <li><strong>Automatic model selection by task</strong><span class="tag done">Rolled out in June on Frontier</span><br>
+  Cowork can now select the best-suited model for different tasks: OpenAI GPT-5.5 Thinking for complex reasoning, Anthropic models for visual work such as PowerPoint and graphics, or GPT-5.5 for in-depth research with citations. Users receive more tailored support for different types of work without having to select a model manually.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXg2V1ZERQ.png" alt="Model selector in Cowork" loading="lazy" width="999" height="536"><figcaption>Model selector in Cowork</figcaption></figure>
+
+  <li><strong>More plugin integrations</strong><span class="tag done">Rolled out in June</span><br>
+  Cowork’s plugin support has expanded further, allowing users to access more business systems directly within their workflows. New additions to the plugin store include Enosix, Harvey, LSEG, Miro, monday.com, Moody's, Morningstar, S&amp;P Global Energy, and TeamsMaestro, while Databricks is available through sideloading. Microsoft Fabric and the full Dynamics 365 portfolio, including Sales, Customer Service, and ERP apps, are also supported.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXF0ZmtRNQ.png" alt="Adding and managing plugins in Cowork’s Customize interface" loading="lazy" width="999" height="702"><figcaption>Adding and managing plugins in Cowork’s Customize interface</figcaption></figure>
+
+  <li><strong>Custom skills</strong><span class="tag done">Rolled out in June</span><br>
+  Users can now easily create, edit, and manage custom skills from the “Customize” tab, enabling Cowork to work the way they want. Skills are essentially sets of custom instructions that users can refine over time. They can also combine their own workflows with skills provided by partners or deployed across the organization through plugins. This allows teams to standardize repetitive tasks without rewriting prompts each time.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXNaS25NTQ.png" alt="Creating and managing skills on Cowork’s Customize page" loading="lazy" width="999" height="708"><figcaption>Creating and managing skills on Cowork’s Customize page</figcaption></figure>
+
+  <li><strong>Create and edit visual assets directly</strong><span class="tag done">Rolled out in June</span><br>
+  Cowork can now create and edit visual assets directly, including presentation graphics, document illustrations, and email images. This capability is powered by OpenAI’s ChatGPT Images 2.0, allowing users to generate visual content within their workflow without switching tools. Cowork can also use PowerPoint templates with brand guidelines defined in the organization’s asset library, applying approved colors, fonts, logos, and layouts from the outset and significantly reducing manual formatting and brand correction after a presentation is generated.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWRsa3Budg.png" alt="Presentation generated by Cowork using a branded template" loading="lazy" width="999" height="562"><figcaption>Presentation generated by Cowork using a branded template</figcaption></figure>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLVdlZHkyQQ.png" alt="Cowork creating and editing visual assets directly" loading="lazy" width="999" height="705"><figcaption>Cowork creating and editing visual assets directly</figcaption></figure>
+
+  <li><strong>Work across systems through the Edge browser</strong><span class="tag done">Rolled out in June on Frontier</span><br>
+  Cowork can use the Edge browser to perform work across an organization’s business systems, websites, and intranet sites.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWRPcE5tNg.png" alt="Cowork completing an expense reimbursement process through browser automation" loading="lazy" width="998" height="691"><figcaption>Cowork completing an expense reimbursement process through browser automation</figcaption></figure>
+
+  <li><strong>Mobile support (iOS and Android)</strong><span class="tag done">Rolled out in June</span><br>
+  Cowork is now supported on mobile devices. Users can start work on one device and seamlessly continue on another with full context and conversation history preserved, giving mobile users the complete Cowork experience without losing progress.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWNWTUF4Tw.png" alt="Cowork task list on a mobile device" loading="lazy" width="648" height="673"><figcaption>Cowork task list on a mobile device</figcaption></figure>
+
+  <li><strong>Push notifications for long-running tasks</strong><span class="tag done">Rolled out in June</span><br>
+  For long-running tasks, Cowork sends push notifications about approval requests, input requests, and completion. Users do not need to constantly monitor work in progress and can continue with their own tasks while Cowork completes its work.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW9uYWh3RQ.png" alt="Cowork sending a task completion notification on mobile" loading="lazy" width="593" height="852"><figcaption>Cowork sending a task completion notification on mobile</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="chat">Copilot app and Chat: enhanced citations and reasoning</h3>
+
+<ul class="feat">
+  <li><strong>Reason over Power BI enterprise data</strong><span class="tag done">Rolling out in June on Frontier</span><br>
+  With Work IQ, Microsoft 365 Copilot can now reason over Power BI enterprise data and provide grounded answers directly from Power BI reports and semantic models. Users can ask questions in natural language and receive accurate answers without writing their own queries, bringing governed BI data into the Copilot experience and producing trusted insights faster.</li>
+
+  <li><strong>Search and query Dataverse business data</strong><span class="tag soon">Public preview in June; general availability in September</span><br>
+  Also powered by Work IQ, Copilot can now search and query business data in Dataverse, bringing line-of-business records into workflows across Copilot Chat experiences. Users can ask about Dataverse data in natural language and receive grounded answers without leaving Copilot, extending Copilot’s reach to the structured business data their organization stores in Dataverse.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXlUb1JLRA.png" alt="Citations to Dataverse data in a Copilot response" loading="lazy" width="624" height="350"><figcaption>Citations to Dataverse data in a Copilot response</figcaption></figure>
+
+  <li><strong>Deep citations</strong><span class="tag done">Rolled out in June</span><br>
+  Deep citations let users verify Copilot’s results: links point directly to the <strong>specific location</strong> in the cited file rather than to the file as a whole. The feature initially supports Word and PowerPoint files and will later expand to meeting, web, and PDF sources. Enabling users to trace answers back to their source helps build trust in Copilot output.</li>
+
+  <li><strong>Regenerate</strong><span class="tag done">Rolled out in June</span><br>
+  The new “Regenerate” action offers simple options such as “Try again” and “Switch model,” allowing users to get another response to their latest prompt directly in Copilot Chat. Without starting over, they can explore different answers and refine the output in place to improve quality and find the most suitable response.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXpMaGV6Mg.png" alt="Regenerate action in Copilot Chat" loading="lazy" width="624" height="322"><figcaption>Regenerate action in Copilot Chat</figcaption></figure>
+
+  <li><strong>Vision</strong><span class="tag soon">Rolling out in July</span><br>
+  When work depends on what users can see, Vision in Microsoft 365 Copilot helps them get answers faster. Instead of struggling to describe a dashboard, document, image, error message, or real-world object, users can show it directly to Copilot and ask questions through voice conversation. Copilot combines this visual context with available work and web context to explain what is in view, provide insights, and guide the next step.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWlRbDdLcA.png" alt="Vision in Microsoft 365 Copilot" loading="lazy" width="999" height="562"><figcaption>Vision in Microsoft 365 Copilot</figcaption></figure>
+
+  <li><strong>“Suggested edits” for Copilot Page</strong><span class="tag done">Rolled out in June</span><br>
+  Users can now select “Suggested edits” from the Copilot quick menu to receive actionable feedback on a Copilot Page. Copilot analyzes the page content and provides inline feedback and suggestions to improve clarity and quality. Users can apply them directly to the page, quickly refining their work and maintaining momentum without switching tools.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUxnSVo0Yw.png" alt="Suggested edits in Copilot Page" loading="lazy" width="999" height="562"><figcaption>Suggested edits in Copilot Page</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="notebooks">Copilot Notebooks: new reference sources and broader availability</h3>
+
+<p><strong>Use Outlook email as a reference source</strong><span class="tag soon">Rolling out in July</span><br>
+Users can add Outlook email as a reference source in Copilot Notebooks. With email content included in a notebook, Copilot can answer based on the conversations, decisions, and context that drive work forward, connecting email context with the broader notebook workspace.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXlVbXY0cA.png" alt="Adding Outlook email as a reference source in Notebooks" loading="lazy" width="999" height="562"><figcaption>Adding Outlook email as a reference source in Notebooks</figcaption></figure>
+
+<p><strong>Available to Copilot Chat users</strong><span class="tag done">Rolled out in June</span><br>
+Copilot Notebooks, previously available only to licensed Microsoft 365 Copilot users, has begun rolling out to Copilot Chat users. This gives more team members a shared space where they can bring together project context, work from reference sources, and turn that information into practical tools such as mind maps and study guides.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXlYUTMwaA.png" alt="Copilot Notebooks interface" loading="lazy" width="999" height="545"><figcaption>Copilot Notebooks interface</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="outlook">Copilot in Outlook: settings access and targeted refinement</h3>
+
+<p><strong>Access to Copilot settings in classic Outlook for Windows</strong><span class="tag soon">Rolling out in July</span><br>
+Classic Outlook for Windows now provides direct access to Copilot settings, allowing users to find and adjust Copilot options without leaving Outlook for a more convenient management experience.</p>
+
+<p><strong>Refine selected parts of an email draft in the compose canvas</strong><span class="tag done">Rolled out on the web in June</span><br>
+Users can now refine email drafts with Copilot directly in the compose canvas: by selecting a paragraph in the draft, they can ask Copilot to adjust its length, tone, or structure, making targeted changes easily without rewriting the entire email.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW05OVZBOA.png" alt="Using Copilot for targeted refinement in the Outlook compose canvas" loading="lazy" width="999" height="598"><figcaption>Using Copilot for targeted refinement in the Outlook compose canvas</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="word">Copilot in Word: enhanced document editing</h3>
+
+<ul class="feat">
+  <li><strong>Model selection</strong><span class="tag done">Rolled out in June</span><br>
+  Copilot in Word now supports model selection, allowing users to choose an Anthropic model while editing a document. For tasks such as rewriting, summarizing, restructuring, and polishing content, writers can select the model best suited to the work, giving them more control over the editing experience and greater confidence in achieving the desired tone, structure, and level of detail without repeatedly rewriting prompts or starting over.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW9OSXpPdQ.png" alt="Model selection menu for Copilot in Word" loading="lazy" width="427" height="542"><figcaption>Model selection menu for Copilot in Word</figcaption></figure>
+
+  <li><strong>Copilot Catchup content cards</strong><span class="tag done">Rolled out in June</span><br>
+  Copilot Catchup is now presented as content cards that quickly summarize what has changed since the user last opened the document. Rather than rereading the entire document to find updates, users see a concise recap immediately, providing an efficient way to catch up quickly on shared documents and continually evolving files.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWZTckNqQg.png" alt="Copilot Catchup content card interface" loading="lazy" width="999" height="910"><figcaption>Copilot Catchup content card interface</figcaption></figure>
+
+  <li><strong>Create and insert images</strong><span class="tag done">Rolled out in June</span><br>
+  Users can now create and insert images with Copilot in Word. As part of the agentic editing process, Copilot generates images and embeds them in place, bringing image creation directly into the Word writing experience.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW9BZGY5Rg.png" alt="Copilot generating and inserting an image in Word" loading="lazy" width="616" height="791"><figcaption>Copilot generating and inserting an image in Word</figcaption></figure>
+
+  <li><strong>Agentic editing capabilities on iOS</strong><span class="tag done">Rolled out in June</span><br>
+  Copilot’s agentic capabilities in Word are now available on iOS, allowing users to edit documents and add content on an iPhone or iPad. Core writing support covers mobile scenarios where work needs to move forward at any time: users can make quick updates, draft new content, and polish existing text on a mobile device, while more advanced operations such as inserting images and tracking changes can be completed in the full version of Word.</li>
+
+  <li><strong>Retain Copilot Chat conversation history</strong><span class="tag done">Rolled out in June</span><br>
+  Word now carries conversation history from Copilot Chat into the app, allowing users to continue where they left off without losing the thread of the conversation and keeping complex, multistep document work coherent.</li>
+
+  <li><strong>Make changes based on comments</strong><span class="tag done">Rolled out in June</span><br>
+  Copilot can understand and reason over comments, then make the corresponding changes to the document. Instead of manually addressing feedback one item at a time, users can ask Copilot to implement the suggested changes directly, accelerating revision cycles for collaborative documents.</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="ppt">Copilot in PowerPoint: brand kits, skills, and reference sources</h3>
+
+<p><strong>Brand Kit Picker</strong><span class="tag done">Rolled out in June</span><br>
+The Brand Kit Picker makes it easy for users to create presentations that follow organization-approved brand templates. When creating a presentation with Copilot, users can select an admin-approved brand kit to apply the correct colors, fonts, and visual style from the outset, helping teams produce polished, on-brand presentations faster while reducing manual formatting and brand correction after generation.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXZIY1kzVg.png" alt="Selecting a brand kit in PowerPoint" loading="lazy" width="651" height="375"><figcaption>Selecting a brand kit in PowerPoint</figcaption></figure>
+
+<p><strong>Create and reuse Copilot skills</strong><span class="tag done">Rolled out in July</span><br>
+Users will be able to create and reuse Copilot skills for repeatable PowerPoint authoring tasks. By saving commonly used instructions as skills, they can build, refine, and format presentations in a standardized way without rewriting the same prompts each time.</p>
+
+<p><strong>Reference SharePoint libraries and OneDrive folders</strong><span class="tag done">Rolled out in June</span><br>
+When creating presentations with Copilot, users can now reference SharePoint libraries and OneDrive folders. Copilot uses these sources to ground the presentation in the organization’s existing content, producing a presentation that genuinely reflects the specified materials rather than relying on generic information.</p>
+</section>
+
+<section class="card">
+<h3 id="excel">Copilot in Excel: skills, personalization, and rules sheets</h3>
+
+<p><strong>Skills</strong><span class="tag done">Rolled out in June</span><br>
+Users can now use skills in Excel to package repeatable workflows as reusable instructions. Teams can create custom skills for common analysis, modeling, or reporting tasks and invoke them in Excel at any time, standardizing complex work without repeatedly writing the same prompts.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUZtUndKTA.png" alt="Skill management options for Copilot in Excel" loading="lazy" width="526" height="562"><figcaption>Skill management options for Copilot in Excel</figcaption></figure>
+
+<p><strong>Personalization</strong><span class="tag done">Rolled out in June</span><br>
+Copilot in Excel now supports personalization: users set long-term preferences once, and Copilot follows them consistently across all workbooks. Users can define guidelines for formatting, naming conventions, formulas, PivotTables, and report styles so that Copilot’s edits align with their working habits without repeating the instructions in every prompt. This produces more consistent output, reduces rework, and gives users greater control over how Copilot edits spreadsheets.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUtWbHU4aw.png" alt="Customize Copilot personalization settings in Excel" loading="lazy" width="999" height="728"><figcaption>Customize Copilot personalization settings in Excel</figcaption></figure>
+
+<p><strong>Workbook rules sheets</strong><span class="tag done">Rolled out in June</span><br>
+Copilot in Excel now includes workbook rules sheets, enabling teams to define standards that remain with a specific workbook. Rules can be written in a <code>.Rules</code> worksheet and cover structure, formatting, naming, formula conventions, and examples, ensuring that everyone who edits the file with Copilot follows the same workbook-specific standards. Rules can also reference examples, formulas, cell ranges, and other worksheets, making it easier to standardize reusable templates and team workflows directly in Excel.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW1Ncm5Sdg.png" alt=".Rules rules sheet in an Excel workbook" loading="lazy" width="999" height="532"><figcaption>.Rules rules sheet in an Excel workbook</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="agents">Copilot agents: Planner agent launches and model selection for Researcher</h3>
+
+<p><strong>Model and mode selection for the Researcher agent</strong><span class="tag done">Rolled out in June</span><br>
+After adding the Researcher agent to a Copilot conversation, users can now select from supported Researcher models and modes directly within the session, giving them control over the depth and approach of each research task and giving teams greater flexibility to match the right model to different tasks.</p>
+
+<p><strong>Planner agent</strong><span class="tag done">Rolled out in June</span><br>
+The Planner agent helps users plan, organize, and manage work more efficiently. In Microsoft 365 Copilot, the agent provides interactive task cards and actionable insights, making it easy for users to prioritize across Planner plans and focus on what truly matters. With natural-language prompts, users can also create and update tasks or ask the agent to generate structured plans with goals and buckets.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLTBJRkVZYQ.png" alt="Planner agent task cards in Copilot" loading="lazy" width="999" height="556"><figcaption>Planner agent task cards in Copilot</figcaption></figure>
+</section>
+
+<h2>IT admin capabilities</h2>
+
+<section class="card">
+<h3 id="admin">Microsoft 365 admin center: new adoption and management capabilities</h3>
+
+<ul class="feat">
+  <li><strong>Organization prompts</strong><span class="tag done">Rolled out in June</span><br>
+  Admins can now create and publish organization prompts in the Microsoft 365 admin center, guiding users to apply Copilot to common workflows in effective and practical ways. Users can find these organization prompts in Copilot Chat’s prompt suggestions and prompt gallery, helping them develop good prompting habits and explore Copilot use cases that suit their needs.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXZ3V3BHQQ.png" alt="Organization prompts displayed in Copilot" loading="lazy" width="999" height="631"><figcaption>Organization prompts displayed in Copilot</figcaption></figure>
+
+  <li><strong>Cost management dashboard</strong><span class="tag done">Rolled out in June</span><br>
+  The cost management dashboard in the admin center provides a centralized place to enable, manage, and optimize spending on usage-based AI experiences, including Copilot Cowork. Admins can allocate Copilot Credits, set spending policies and limits by user group, and choose between prepaid credits and pay-as-you-go billing. Reports, budgets, alerts, and hard limits help organizations monitor usage, control costs, and manage spending.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXAyZzczWQ.png" alt="Cost management page in the Microsoft 365 admin center" loading="lazy" width="999" height="550"><figcaption>Cost management page in the Microsoft 365 admin center</figcaption></figure>
+
+  <li><strong>Team-level cost reporting</strong><span class="tag soon">Rolling out in July</span><br>
+  Insights will also provide a dashboard with cost reports by user group or team, giving team leaders visibility into their team’s Copilot credit usage. Enabled by default, the dashboard is available to managers with at least five direct reports, Insights analysts, and global admins, helping managers quickly understand and control AI spending.</li>
+
+  <li><strong>Agent metrics available for custom reporting</strong><span class="tag soon">Public preview in July; general availability in September</span><br>
+  Agent-related metrics will be available in Insights, allowing analysts to combine granular agent usage data with organizational context, identify adoption trends, create custom reports, and make data-driven decisions without relying on prebuilt dashboards.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUNaeE5SSQ.png" alt="Custom agent report in the analyst workbench" loading="lazy" width="998" height="714"><figcaption>Custom agent report in the analyst workbench</figcaption></figure>
+
+  <li><strong>Organizational messages support hybrid-joined devices</strong><span class="tag done">Rolled out in June</span><br>
+  Organizational messages now support hybrid-joined devices, allowing admins to deliver targeted in-product communications to users of devices connected to both on-premises Active Directory and Microsoft Entra ID. This expands message reach in enterprise environments where hybrid identity configurations are common, helping organizations continuously drive awareness, onboarding, and adoption of Copilot, agents, and other Microsoft 365 experiences while closing a critical device-coverage gap.</li>
+
+  <li><strong>Vision control toggle</strong><span class="tag done">Rolled out in June</span><br>
+  Admins now have a control toggle for Vision in Microsoft 365, a capability that uses image streams from screen sharing or camera sharing as model input. Organizations can therefore decide when and where Vision may be used.</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLTJqcmI2dA.png" alt="Screen and camera sharing toggles on the admin settings page" loading="lazy" width="780" height="566"><figcaption>Screen and camera sharing toggles on the admin settings page</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="purview">Purview Data Loss Prevention: external email restrictions and Cowork controls</h3>
+
+<p><strong>Restrict references to external email</strong><span class="tag soon">Public preview in June; general availability in July</span><br>
+Microsoft Purview Data Loss Prevention (DLP) can now restrict Microsoft 365 Copilot and Copilot Chat from referencing external email. Admins can use this capability to exclude email from external senders so it is not summarized, cited, or used as grounding data for Copilot responses. This helps reduce the risk of external, third-party, or unreviewed information appearing in AI-generated content while still allowing users to work efficiently with trusted internal content. The capability applies to Microsoft 365 Copilot and to agents built in Copilot Studio, published to Microsoft 365 Copilot, and using only Microsoft 365 data.</p>
+
+<p><strong>Purview controls extend to Cowork</strong><span class="tag done">Rolled out in June</span><br>
+Microsoft Purview controls now extend to Cowork, allowing organizations to use the same tools that manage Microsoft 365 Copilot to maintain security and compliance. Cowork supports sensitivity label inheritance and display, audit logging, viewing interactions in the Data Security Posture Management (DSPM) Activity Explorer, and Insider Risk Management, eDiscovery, Data Lifecycle Management (DLM), and Communication Compliance for Cowork interactions. This enables organizations to protect and govern Cowork interactions with familiar tools.</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWNYQkxpbQ.png" alt="Viewing Cowork interactions in Purview Data Security Posture Management" loading="lazy" width="999" height="478"><figcaption>Viewing Cowork interactions in Purview Data Security Posture Management</figcaption></figure>
+</section>
+
+<div class="note">
+<strong>Did you know?</strong> The <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" rel="noopener">Microsoft 365 Roadmap</a> provides the latest updates on productivity apps and intelligent cloud services, while the <a href="https://learn.microsoft.com/microsoft-365-copilot/release-notes" target="_blank" rel="noopener">Microsoft 365 Copilot release notes</a> list Copilot features that have reached general availability across platforms (Current Channel for Microsoft 365 apps). Check them regularly to learn which features are in development, rolling out soon, or generally available. Please note that all timelines mentioned in this article are tentative and subject to change.
+</div>
+
+<footer>
+<p>This page is the English edition of the Chinese compilation; refer to the official original article for content and cutoff dates.<br>
+Original title: <em>What's New in Microsoft 365 Copilot | June 2026</em>, by Seth Patton, published on Microsoft Tech Community (June 30, 2026; updated July 14).<br>
+Original article: <a href="https://techcommunity.microsoft.com/blog/Microsoft365CopilotBlog/what%E2%80%99s-new-in-microsoft-365-copilot--june-2026/4529572" target="_blank" rel="noopener">techcommunity.microsoft.com</a></p>
+</footer>
+  </main>
+</div>
+
+</div>
+<a class="back-to-overview" href="#monthly-overview" aria-label="Back to this month at a glance" title="Back to this month at a glance">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 7 5-5 5 5M12 2v12M4 17h16M4 22h16"/></svg>
+  <span>Overview</span>
+</a>
+</body>
+</html>

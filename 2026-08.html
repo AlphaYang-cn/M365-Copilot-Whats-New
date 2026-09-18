@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Copilot 新功能速览 | 2026 年 8 月</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/language-switcher.css">
+</head>
+<body class="page-month">
+<div class="wrap">
+<nav class="language-switcher" aria-label="语言切换">
+<a href="2026-08.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a>
+<a href="2026-08-tc.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+<a href="2026-08-en.html" lang="en" hreflang="en">English</a>
+</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 id="month-navigation-title">月度导航</h2>
+    <nav class="month-links" aria-labelledby="month-navigation-title">
+      <a href="2026-08.html" aria-current="page">2026 年 8 月</a>
+      <a href="2026-07.html">2026 年 7 月</a>
+      <a href="2026-06.html">2026 年 6 月</a>
+      <a href="2026-05.html">2026 年 5 月</a>
+      <a href="2026-04.html">2026 年 4 月</a>
+    </nav>
+    <a class="back" href="index.html">&#8592; 返回月份总目录</a>
+  </aside>
+  <main class="content" id="main">
+
+<header class="hero">
+  <p class="kicker">MICROSOFT 365 COPILOT 博客</p>
+  <h1>Microsoft Copilot 新功能速览 | 2026 年 8 月</h1>
+  <p class="meta">作者：Daniel Vargas（Microsoft）· 发布日期：2026 年 8 月 31 日 ·
+  <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-copilot--august-2026/4551960" target="_blank" rel="noopener">查看英文原文</a></p>
+</header>
+
+<p class="lead">本文为 Microsoft Copilot 官方月度更新（2026 年 8 月刊）的中文整理版。本月更新覆盖 Cowork、Copilot Chat、Notebooks、Teams、Word、PowerPoint、Excel、SharePoint、Outlook、OneDrive 和 Planner，并带来新的连接器、插件与 IT 管理能力，帮助用户在日常应用中更高效地完成工作。</p>
+<figure class="banner"><img src="assets/2026-08/bS00NTUxOTYwLWhtSHM5bg.png" alt="文章配图" loading="lazy" width="948" height="197"></figure>
+
+<nav class="toc" id="monthly-overview" aria-labelledby="monthly-overview-title" tabindex="-1">
+  <h2 id="monthly-overview-title">本月更新概览</h2>
+  <strong>面向用户的能力</strong>
+  <ul>
+    <li><a href="#cowork">Cowork：更灵活地控制工作强度与额度消耗</a></li>
+    <li><a href="#chat">Copilot Chat：文本选择、会话分享等更新</a></li>
+    <li><a href="#notebooks">Copilot Notebooks：新的使用方式</a></li>
+    <li><a href="#teams">Teams 中的 Copilot：切换会议回顾语言</a></li>
+    <li><a href="#word">Word 中的 Copilot：超链接、图像理解与精细高亮</a></li>
+    <li><a href="#ppt">PowerPoint 中的 Copilot：品牌管控与协作增强</a></li>
+    <li><a href="#excel">Excel 中的 Copilot：更改历史技能与聊天历史</a></li>
+    <li><a href="#sharepoint">SharePoint 中的 Copilot：个人技能</a></li>
+    <li><a href="#outlook">Outlook 中的 Copilot：代理、邮件与管理增强</a></li>
+    <li><a href="#onedrive">OneDrive 中的 Copilot：文件处理能力提升</a></li>
+    <li><a href="#planner">Planner 中的 Copilot：状态报告与任务增强</a></li>
+    <li><a href="#connectors">新的连接器与插件</a></li>
+  </ul>
+  <strong>面向 IT 管理员的能力</strong>
+  <ul>
+    <li><a href="#admin">数据导出与 GitHub Copilot AI Credits</a></li>
+  </ul>
+</nav>
+
+<h2>面向用户的能力</h2>
+
+<section class="card">
+<h3 id="cowork">Cowork：更灵活地控制工作强度与额度消耗</h3>
+
+<ul class="feat">
+  <li><strong>选择工作强度</strong><span class="tag done">8 月已推出</span><br>
+  用户现在可以在 Cowork 的撰写框中同时选择模型与工作强度，在回答质量、处理速度和 Copilot Credits 消耗之间取得平衡。「中等」是适合日常工作的默认选项；「轻量」适合简单任务；「高」「超高」和「最大」则会投入更多时间进行分析与推理，适合更复杂的工作，但处理速度可能更慢，也会更快消耗可用额度。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLUtNSTlMSw.png" alt="Cowork 的模型选择器与工作强度菜单" loading="lazy" width="998" height="384"><figcaption>Cowork 的模型选择器与工作强度菜单</figcaption></figure>
+
+  <li><strong><code>/cost</code> 技能</strong><span class="tag done">8 月已推出</span><br>
+  新增的 <a href="https://aka.ms/CopilotCredits/Cost" target="_blank" rel="noopener"><code>/cost</code> 技能</a>可显示当前任务会话的预计额度消耗、当月剩余额度百分比、本月至今的使用量，以及每月额度重置日期，帮助用户在执行工作时及时掌握成本。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLUsxeGFkdw.png" alt="Cowork 中显示额度使用情况的 cost 技能" loading="lazy" width="999" height="232"><figcaption>Cowork 中的 <code>/cost</code> 技能及额度重置日期</figcaption></figure>
+
+  <li><strong>「Scheduled」更名为「Automations」</strong><span class="tag done">8 月已推出</span><br>
+  Cowork 中原有的「Scheduled」选项卡现已更名为「Automations（自动化）」，并把定时任务与事件触发式任务集中在同一处，方便用户统一查看和管理自动运行的工作。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLW9vUk9RVw.png" alt="Cowork 中的 Automations 选项卡" loading="lazy" width="507" height="502"><figcaption>Cowork 中统一管理定时与事件触发任务的 Automations 选项卡</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="chat">Copilot Chat：文本选择、会话分享等更新</h3>
+
+<ul class="feat">
+  <li><strong>仅针对选中的文本继续操作</strong><span class="tag done">8 月已推出</span><br>
+  用户可以在 Copilot 回复中选中一个句子、一段文字或一张表格，再要求 Copilot 只对所选内容执行后续操作。被选中的内容会显示在提示词输入区域中，让指令范围更加明确，减少重复描述上下文的需要。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLU93bHVGRw.png" alt="在 Copilot Chat 回复中选中文本继续操作" loading="lazy" width="998" height="637"><figcaption>在 Copilot Chat 回复中选中文本，并围绕所选内容继续提问</figcaption></figure>
+
+  <li><strong>分享完整会话或单条回复</strong><span class="tag done">8 月已推出</span><br>
+  用户可以通过页面右上角「共享」菜单中的「Share chat」分享完整聊天，也可以从某条回复的「更多选项」菜单中选择「Share response」只分享该条回复。接收者会获得只读副本，同时可以把内容延续为自己的新对话。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLXc1dWZRdw.png" alt="分享 Copilot Chat 中的单条回复" loading="lazy" width="999" height="532"><figcaption>从回复的更多选项菜单分享单条 Copilot 回答</figcaption></figure>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLTJ5eU5lMg.png" alt="分享完整 Copilot Chat 会话" loading="lazy" width="999" height="471"><figcaption>通过共享菜单分享完整 Copilot Chat 会话</figcaption></figure>
+
+  <li><strong>基于 Power BI 数据进行推理</strong><span class="tag done">6 月公开预览，8 月全球推出</span><br>
+  Copilot Chat 与 Cowork 现在可以在用户已有权限范围内，对 Power BI 报表和语义模型中的企业数据进行推理，把受治理的业务指标直接带入分析与问答流程。</li>
+
+  <li><strong>模型驱动的答案卡片</strong><span class="tag done">8 月已推出</span><br>
+  在受支持的 Microsoft Entra 帐户和 Microsoft 帐户体验中，Copilot 可以根据问题呈现更丰富的答案卡片，覆盖天气、体育、财经、图片、视频、地点和新闻等信息类型，让用户更快获得结构化结果。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLWhBOVB3Ug.png" alt="Copilot Chat 中的天气答案卡片" loading="lazy" width="998" height="763"><figcaption>Copilot Chat 针对西雅图天气生成的模型驱动答案卡片</figcaption></figure>
+
+  <li><strong>使用「Try again」重新生成回答</strong><span class="tag done">8 月已推出</span><br>
+  用户可以通过「Try again（重试）」重新生成最近一次回答，既可以继续使用原模型，也可以切换到其他模型后再次作答，便于比较不同模型的结果。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLVJQelF1MA.png" alt="切换模型并重新生成 Copilot 回答" loading="lazy" width="999" height="518"><figcaption>通过 Try again 切换模型并重新生成回答</figcaption></figure>
+
+  <li><strong>在移动端起草 Outlook 邮件</strong><span class="tag done">8 月已推出</span><br>
+  移动端用户可以直接在 Copilot Chat 中描述要发送的邮件，Copilot 会生成一封内嵌的 Outlook 草稿；用户随后可在 Outlook 移动应用中打开草稿，继续编辑并发送。</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="notebooks">Copilot Notebooks：新的使用方式</h3>
+
+<ul class="feat">
+  <li><strong>Copilot 应用与 OneNote 中的同步体验</strong><span class="tag done">8 月已推出</span><br>
+  Copilot Notebooks 现在提供两种保持同步的使用方式：在 Copilot 应用中进行轻量级聊天、管理引用源并创建产出物；在 OneNote 中开展更深入的项目工作、创建更多类型的产出物并与他人协作。点击「Open in OneNote」即可直接进入同一个已同步笔记本。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLTM4NzFzMw.png" alt="Copilot 应用中的 Notebooks 新体验" loading="lazy" width="998" height="631"><figcaption>Copilot 应用中的 Copilot Notebooks 新体验</figcaption></figure>
+
+  <li><strong>推荐更贴合项目的产出物</strong><span class="tag done">8 月已推出</span><br>
+  Notebooks 会结合 Work IQ 与笔记本已有内容推荐适合创建的产出物，并可据此生成更具体、更符合当前项目上下文的 Word 文档、Excel 工作簿或 PowerPoint 演示文稿。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLWdsTHRXNQ.png" alt="Copilot Notebooks 推荐 Telecom Opportunity Matrix 产出物" loading="lazy" width="999" height="819"><figcaption>Copilot Notebooks 根据项目内容推荐创建「Telecom Opportunity Matrix」</figcaption></figure>
+
+  <li><strong>Android 多模态捕捉</strong><span class="tag soon">9 月推出</span><br>
+  Android 端将支持同时记录音频、图像和笔记，并把这些输入整理为结构化的笔记本笔记。该能力也可通过 iOS 和 iPad 版 OneNote 使用。</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="teams">Teams 中的 Copilot：切换会议回顾语言</h3>
+<p><span class="tag done">8 月已推出</span>Teams 会议回顾新增语言切换控件，用户可以在会议回顾已经生成后，将其转换为其他语言，无需重新生成整场回顾。</p>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLWZHVU02NQ.png" alt="Teams 会议回顾中的语言选择菜单" loading="lazy" width="998" height="571"><figcaption>在 Teams 中切换已生成会议回顾的语言</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="word">Word 中的 Copilot：超链接、图像理解与精细高亮</h3>
+
+<ul class="feat">
+  <li><strong>直接插入并设置超链接格式</strong><span class="tag done">8 月已推出</span><br>
+  Copilot 现在可以按照用户要求，在 Word 文档中直接插入超链接并完成格式设置，减少手动查找位置、粘贴网址和调整样式的步骤。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLTJrT0ppVA.png" alt="Copilot 在 Word 文档中添加章节和超链接" loading="lazy" width="999" height="614"><figcaption>Copilot 在 Word 文档中添加内容与超链接</figcaption></figure>
+
+  <li><strong>理解引用文档中的图像</strong><span class="tag done">8 月已推出</span><br>
+  Copilot 可以理解所引用文档中的图像，并在生成内容时综合利用相关文字与视觉信息，让基于参考材料起草的结果更加完整。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLUExVmd1bg.png" alt="Copilot 使用引用文档中的图片和信息图" loading="lazy" width="998" height="621"><figcaption>Copilot 理解并使用引用文档中的图像和信息图</figcaption></figure>
+
+  <li><strong>仅高亮实际改写的文字</strong><span class="tag done">8 月全球推出</span><br>
+  Copilot 执行改写后，现在只会高亮具体发生变化的单词，而不再高亮整段文字，便于用户快速识别、检查和接受修改。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLURQWU4yeQ.png" alt="Word 中精细高亮 Copilot 改写的单词" loading="lazy" width="999" height="601"><figcaption>Word 仅高亮 Copilot 实际修改的单词</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="ppt">PowerPoint 中的 Copilot：品牌管控与协作增强</h3>
+
+<ul class="feat">
+  <li><strong>在批注中通知相关人员并分配任务</strong><span class="tag done">8 月已推出</span><br>
+  Copilot 可以直接在 PowerPoint 批注串中通知相关人员，并把后续事项分配为任务，让团队更快地从反馈转入执行，同时减少在不同工具之间切换和手动跟踪的工作。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLUsxQmVKZQ.png" alt="让 Copilot 在 PowerPoint 中添加批注" loading="lazy" width="781" height="439"><figcaption>在 PowerPoint 批注中通过 Copilot 推进协作</figcaption></figure>
+
+  <li><strong>严格遵循品牌模板</strong><span class="tag done">8 月已推出</span><br>
+  启用严格品牌遵循后，Copilot 只会使用组织批准的模板和幻灯片母版版式，不会新增或删除占位符，也不会自行创造版式。该模式适合正式对外、受监管或对品牌一致性要求较高的演示文稿。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLVcyWHFqMg.png" alt="PowerPoint 中严格遵循品牌的设置" loading="lazy" width="999" height="694"><figcaption>PowerPoint 品牌套件中的严格品牌遵循设置</figcaption></figure>
+
+  <li><strong>通过备注引导生成</strong><span class="tag done">8 月已推出</span><br>
+  模板设计者可以在幻灯片备注中写入可复用的自然语言生成说明。此后，只要 Copilot 使用该模板创建演示文稿，就会读取这些备注并遵循其中的内容和版式指导。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLVBnd21GNg.png" alt="PowerPoint 管理品牌套件的编辑详情窗口" loading="lazy" width="999" height="553"><figcaption>在品牌套件详情中管理可供 Copilot 使用的模板指导</figcaption></figure>
+
+  <li><strong>管理个人自定义技能</strong><span class="tag done">8 月已推出</span><br>
+  用户可以上传、创建、编辑和删除个人自定义技能，把重复使用的 PowerPoint 指导整理为可复用能力，并在后续演示文稿工作流中随时调用。</li>
+
+  <li><strong>翻译体验移入 Copilot</strong><span class="tag done">8 月已推出</span><br>
+  PowerPoint 的翻译能力从功能区移入 Copilot，翻译处理速度更快，同时文本框可以根据译文长度动态调整大小，减少翻译后的手动排版。</li>
+
+  <li><strong>编辑 SmartArt、图表与形状</strong><span class="tag done">8 月已在 Frontier 推出</span><br>
+  Copilot 现在可以直接编辑画布上的 SmartArt、图表和形状，并在调整内容的同时维持演示文稿的品牌风格。</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="excel">Excel 中的 Copilot：更改历史技能与聊天历史</h3>
+
+<ul class="feat">
+  <li><strong>更改历史技能</strong><span class="tag done">8 月已推出</span><br>
+  新的更改历史技能可以总结工作簿近期发生的变化、识别编辑者，并解释由用户或 AI 完成的修改。用户还可以让 Copilot 撤销某项编辑、恢复公式，或把工作簿还原到较早的可用状态。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLTRvOU9vRA.png" alt="Excel 中的 Copilot 更改历史技能" loading="lazy" width="999" height="562"><figcaption>通过 Copilot 查看和处理 Excel 工作簿的更改历史</figcaption></figure>
+
+  <li><strong>聊天历史</strong><span class="tag done">8 月已推出</span><br>
+  Excel 中的 Copilot 现在会保留之前的对话与会话。用户可以从 Copilot 窗格左上角菜单打开聊天历史，并按最近使用顺序继续查看或处理先前的工作。</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="sharepoint">SharePoint 中的 Copilot：个人技能</h3>
+<p><span class="tag soon">8 月公开预览，12 月全球推出</span>用户可以创建能在不同 SharePoint 站点和 OneDrive 中使用的个人技能。每项技能都会以 Markdown 文件的形式保存在用户 OneDrive 中，便于个人维护、更新和复用自己的工作指导。</p>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLXhSWTNmMw.png" alt="SharePoint 中的个人技能创建和更新 Word 待办清单" loading="lazy" width="683" height="706"><figcaption>通过 SharePoint 中的个人技能创建和更新 Word 待办清单</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="outlook">Outlook 中的 Copilot：代理、邮件与管理增强</h3>
+
+<ul class="feat">
+  <li><strong>直接使用自定义引擎代理</strong><span class="tag done">8 月已推出</span><br>
+  用户现在可以直接在 Outlook 中访问自定义引擎代理，把组织构建的专属代理能力带入邮件和日历工作流。</li>
+
+  <li><strong>通过自然语言管理邮件与日历</strong><span class="tag done">8 月已推出</span><br>
+  用户可以通过对话让 Copilot 整理邮件、应用类别、创建文件夹、管理收件箱规则，并处理会议和日历事件，减少重复的手动管理操作。</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="onedrive">OneDrive 中的 Copilot：文件处理能力提升</h3>
+<p><span class="tag soon">8 月公开预览，12 月全球推出</span>Copilot in OneDrive 现在可以查找和分析文件，基于文件内容创建摘要、仪表板和演示文稿，并在不离开 OneDrive 的情况下保存或分享结果，让从检索资料到形成交付物的流程更加连贯。</p>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLTdCWDR2Ug.png" alt="Copilot in OneDrive 生成业务回顾文档" loading="lazy" width="999" height="562"><figcaption>Copilot in OneDrive 根据文件生成业务回顾文档</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="planner">Planner 中的 Copilot：状态报告与任务增强</h3>
+
+<ul class="feat">
+  <li><strong>生成项目状态报告</strong><span class="tag done">8 月已在 Frontier 推出</span><br>
+  Planner Agent 可以生成涵盖项目进展、风险、总体状态和下一步工作的状态报告。用户能够指定受众、语气、篇幅以及要包含的章节，让报告更贴合不同汇报场景。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLWpONlhpYg.png" alt="Planner Agent 生成项目状态报告" loading="lazy" width="998" height="542"><figcaption>Planner Agent 根据计划内容生成项目状态报告</figcaption></figure>
+
+  <li><strong>创建并查询 Planner 任务</strong><span class="tag soon">9 月推出</span><br>
+  Copilot 将支持直接创建 Planner 任务，并通过自然语言查询 Planner 中的任务信息，让用户更方便地跟踪和推进工作。</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="connectors">新的连接器与插件</h3>
+<p>新的连接器与插件进一步扩展了 Copilot 可安全访问的业务系统和行业知识，让用户能够在遵循组织既有权限、合规与安全策略的前提下，检索信息、开展推理并采取行动。本月新增内容包括：</p>
+
+<table>
+  <tr><th>行业</th><th>连接器与插件</th></tr>
+  <tr><td>金融服务</td><td>Mercury、Xero</td></tr>
+  <tr><td>法律服务</td><td>iManage Work、Boardwise、Harvey、Descrybe Legal Engine、Relativity、Everlaw</td></tr>
+  <tr><td>专业与商业服务</td><td>Statista、Crossbeam、ZoomInfo、IDC</td></tr>
+  <tr><td>能源与资源</td><td>S&amp;P Global Energy</td></tr>
+  <tr><td>医疗健康与生命科学</td><td>Scite、Consensus</td></tr>
+  <tr><td>软件与科技</td><td>Adobe Journey Optimizer、GoDaddy、Asana</td></tr>
+</table>
+</section>
+
+<h2>面向 IT 管理员的能力</h2>
+
+<section class="card">
+<h3 id="admin">数据导出与 GitHub Copilot AI Credits</h3>
+
+<ul class="feat">
+  <li><strong>导出 Copilot 与 Agent 365 仪表板数据</strong><span class="tag soon">9 月推出</span><br>
+  Copilot 仪表板和 Agent 365 仪表板将支持导出去标识化的行级指标与属性，用于构建自定义报表。管理员可以获得组织级和用户交互层面的洞察，同时移除个人身份信息。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLVJPbkJKaA.png" alt="从 Agent 365 仪表板导出指标" loading="lazy" width="999" height="284"><figcaption>导出 Agent 365 仪表板的去标识化指标</figcaption></figure>
+
+  <li><strong>Insights 中支持 GitHub Copilot AI Credit</strong><span class="tag done">7 月已推出</span><br>
+  Insights 的 Consumption Dashboard 现在支持 GitHub Copilot AI Credit 使用情况。经理、Insights 分析师和全局管理员可以分析额度消耗，并将实际支出与预算进行比较，以便更好地掌握和管理 AI 使用成本。</li>
+<figure><img src="assets/2026-08/bS00NTUxOTYwLXMzbGl6dA.png" alt="Consumption Dashboard 中的 GitHub Copilot 使用情况" loading="lazy" width="705" height="443"><figcaption>在 Consumption Dashboard 中查看 GitHub Copilot AI Credit 使用情况</figcaption></figure>
+</ul>
+</section>
+
+<div class="note">
+<strong>你知道吗？</strong> <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" rel="noopener">AI at Work 路线图</a> 提供生产力应用和智能云服务的最新动态；<a href="https://learn.microsoft.com/copilot/microsoft-365/release-notes?tabs=all" target="_blank" rel="noopener">Microsoft Copilot 发行说明</a> 则列出了当前频道中已经正式发布的功能及各平台的可用情况。建议定期查看，了解哪些功能正在开发、即将推出或已经可用。请注意，本文提及的时间均为暂定，可能会有调整。
+</div>
+
+<footer>
+<p>本页为英文原文的中文整理版，内容与截止日期以官方原文为准。<br>
+原文标题：<em>What's New in Microsoft Copilot | August 2026</em>，作者 Daniel Vargas，发布于 Microsoft Tech Community（2026 年 8 月 31 日，2026 年 9 月 2 日更新）。<br>
+原文链接：<a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-copilot--august-2026/4551960" target="_blank" rel="noopener">techcommunity.microsoft.com</a></p>
+</footer>
+  </main>
+</div>
+
+</div>
+<a class="back-to-overview" href="#monthly-overview" aria-label="返回本月更新概览" title="返回本月更新概览">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 7 5-5 5 5M12 2v12M4 17h16M4 22h16"/></svg>
+  <span>返回概览</span>
+</a>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft 365 Copilot: What’s New | April 2026</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/language-switcher.css">
+</head>
+<body class="page-month">
+<div class="wrap">
+<nav class="language-switcher" aria-label="Language selection">
+<a href="2026-04.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="2026-04-tc.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+<a href="2026-04-en.html" lang="en" hreflang="en" aria-current="page">English</a>
+</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 id="month-navigation-title">Monthly navigation</h2>
+    <nav class="month-links" aria-labelledby="month-navigation-title">
+      <a href="2026-08-en.html">August 2026</a>
+      <a href="2026-07-en.html">July 2026</a>
+      <a href="2026-06-en.html">June 2026</a>
+      <a href="2026-05-en.html">May 2026</a>
+      <a href="2026-04-en.html" aria-current="page">April 2026</a>
+    </nav>
+    <a class="back" href="index-en.html">&#8592; All months</a>
+  </aside>
+  <main class="content" id="main">
+
+<header class="hero">
+  <p class="kicker">MICROSOFT 365 COPILOT BLOG</p>
+  <h1>Microsoft 365 Copilot: What’s New | April 2026</h1>
+  <p class="meta">Author: Seth Patton (Microsoft) · Published: April 30, 2026 ·
+  <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--april-2026/4510935" target="_blank" rel="noopener">Read the original article</a></p>
+</header>
+
+<p class="lead">This is the English edition of the Chinese compilation of the official Microsoft 365 Copilot monthly update for April 2026. Each month, we compile new features and improvements to help Microsoft 365 administrators stay current with the latest Copilot capabilities and enable users to work more efficiently in the apps they use every day.</p>
+<figure class="banner"><img src="assets/2026-04/bS00NTEwOTM1LTExZ0liNA.png" alt="Article image" loading="lazy" width="812" height="169"></figure>
+
+<nav class="toc" id="monthly-overview" aria-labelledby="monthly-overview-title" tabindex="-1">
+  <h2 id="monthly-overview-title">This month at a glance</h2>
+  <strong>User capabilities</strong>
+  <ul>
+    <li><a href="#m365app">Microsoft 365 Copilot app: Mobile redesign and data grounding capabilities</a></li>
+    <li><a href="#notebooks">A major wave of updates for Copilot Notebooks</a></li>
+    <li><a href="#excel">Copilot in Excel: Plan mode and Python support</a></li>
+    <li><a href="#ppt">Copilot in PowerPoint: Image editing options and public web grounding</a></li>
+    <li><a href="#word">Copilot in Word: New Claude model</a></li>
+    <li><a href="#teams">Copilot in Teams: Call delegation and consecutive interpretation</a></li>
+    <li><a href="#onedrive">Copilot in OneDrive: Ready-to-use prompts</a></li>
+    <li><a href="#agentstore">Submit agents to the Agent Store through Agent Builder</a></li>
+    <li><a href="#outlook">Copilot in Outlook: Draft directly on the canvas</a></li>
+  </ul>
+  <strong>IT admin capabilities</strong>
+  <ul>
+    <li><a href="#dashboard">Copilot Dashboard: Export by day and power-user insights</a></li>
+    <li><a href="#admin">Microsoft 365 admin center: New billing management and organizational message options</a></li>
+  </ul>
+</nav>
+
+<h2>User capabilities</h2>
+
+<section class="card">
+<h3 id="m365app">Microsoft 365 Copilot app: Mobile redesign and data grounding capabilities</h3>
+
+<p><strong>New chat-first design for the mobile app</strong><span class="tag soon">Rolling out in May</span><br>
+The Microsoft 365 Copilot mobile app has a new chat-first interface that is cleaner and more intuitive. This update adds text-formatting support to the prompt input and uses a new layout that makes responses easier to view, copy, reopen, and trace to their sources through citations. The app menu has also been streamlined, making it easier for users to switch among Copilot experiences. The overall look is more modern, with a liquid-glass style and a new visual presentation for voice conversations.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LWxHcEU3eA.png" alt="New chat-first interface in the Microsoft 365 Copilot mobile app" loading="lazy" width="999" height="670"><figcaption>New chat-first interface in the Microsoft 365 Copilot mobile app</figcaption></figure>
+
+<p><strong>Generate interactive visualizations and apps in Copilot Pages with Work IQ</strong><span class="tag done">Rolled out in April</span><br>
+Users could already create and preview interactive content such as lightweight dashboards, reports, and visualizations in Copilot Pages, grounded in web data. Now, users can use Work IQ to generate these interactive visualizations and apps, exploring and iterating without leaving the page. When the artifact needs further configuration and management, App Builder can be opened directly from the page.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LU1IRjV0dQ.png" alt="Interactive visualization generated in Copilot Pages" loading="lazy" width="999" height="534"><figcaption>Interactive visualization generated in Copilot Pages</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="notebooks">A major wave of updates for Copilot Notebooks</h3>
+
+<p><span class="tag soon">Rolling out through April and May</span>Copilot Notebooks is rolling out a series of preview features to users enrolled in Frontier, spanning content creation, collaboration, and learning. These include referencing SharePoint content and OneNote notebooks, editing Copilot Pages with Copilot, generating Word documents or PowerPoint presentations from notebook content, sharing notebooks with Microsoft 365 groups, and exploring content through mind maps and study tools.</p>
+
+<ul class="feat">
+  <li><strong>Create and edit Copilot Pages through chat</strong><span class="tag soon">Rolling out in May</span><br>
+  Users no longer need to edit pages manually. They can simply describe in chat what they want to change or create, and Copilot updates the page directly. For administrators, this lowers the learning barrier for managing notebook content on the web and helps drive adoption.</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXhkcEZybA.png" alt="Creating and editing Copilot Pages through chat" loading="lazy" width="998" height="562"><figcaption>Creating and editing Copilot Pages through chat</figcaption></figure>
+
+  <li><strong>Use external webpage links as reference sources</strong><span class="tag soon">Rolling out in May</span><br>
+  Users can paste a URL as a reference source for Notebooks. Copilot uses the webpage content to ground conversations and outputs within the notebook, extending Copilot grounding from internal content to the external web and supporting richer research while keeping notebook context focused.</li>
+
+  <li><strong>Generate a PowerPoint presentation with one click</strong><span class="tag soon">Rolling out in May</span><br>
+  Copilot can directly use the notes, reference sources, and structure already in a notebook to draft slides with a consistent style and prebuilt visual elements, ready for refinement. Users can specify the focus, level of detail, length, and design theme selected from sample templates. The PowerPoint agent then generates a structured, editable first draft that users can continue refining in PowerPoint.</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVpGQk5LcQ.png" alt="PowerPoint agent generating a complete slide deck from notebook content" loading="lazy" width="901" height="531"><figcaption>PowerPoint agent generating a complete slide deck from notebook content</figcaption></figure>
+
+  <li><strong>Generate a Word document with one click</strong><span class="tag soon">Rolling out in May</span><br>
+  Users can quickly generate reports, summaries, proposals, and other documents based on content and reference sources collected in a notebook. They simply describe their needs in the prompt and customize the document type, core topic, target audience, and tone. Copilot generates a first draft that users can open and finalize in Word.</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUxpdXdMcQ.png" alt="Quick create button and its drop-down menu in Notebooks" loading="lazy" width="999" height="562"><figcaption>Quick create button and its drop-down menu in Notebooks</figcaption></figure>
+
+  <li><strong>Mind maps</strong><span class="tag soon">Rolling out in May</span><br>
+  Mind maps interactively present key themes and their relationships across the entire notebook, supported by the source material. Users can expand nodes, view summaries of specific areas, and ask Copilot for deeper interpretation of the content on the map, helping them understand complex concepts and notes more quickly.</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXlTVkw2bg.png" alt="Mind map in Notebooks showing a three-phase release plan" loading="lazy" width="998" height="588"><figcaption>Mind map in Notebooks showing a three-phase release plan</figcaption></figure>
+
+  <li><strong>Multimodal capture in OneNote mobile (iOS)</strong><span class="tag done">Rolled out on iOS in May</span><br>
+  Users can capture audio transcripts, images, and handwritten notes in a single session, making this especially useful for offline scenarios such as in-person meetings and whiteboard discussions. Copilot then organizes the capture into a structured Copilot Page containing insights and the user's original content, and saves it to the specified notebook.</li>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTdDOGowag.png" alt="Multimodal capture interface in OneNote mobile" loading="lazy" width="991" height="999"><figcaption>Multimodal capture interface in OneNote mobile</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="excel">Copilot in Excel: Plan mode and Python support</h3>
+
+<p><strong>Plan mode</strong><span class="tag soon">Rolling out in May</span><br>
+Before changing a workbook, Plan mode provides a clear step-by-step plan so users can confidently carry out complex changes. Users enter it by selecting “Plan” from the menu above the prompt input. They can then see how Copilot intends to complete the task and what data or capabilities it will use, and adjust the plan as needed—ensuring every edit is intentional, transparent, and expected before any change is actually made. This keeps users in control when handling multistep or high-impact tasks.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LThnV2U4dQ.png" alt="Copilot Plan mode conversation interface in Excel" loading="lazy" width="999" height="536"><figcaption>Copilot Plan mode conversation interface in Excel</figcaption></figure>
+
+<p><strong>Python support</strong><span class="tag soon">Rolling out in May</span><br>
+Copilot can now use Python when editing Excel, enabling more advanced data analysis without leaving the workbook. While making edits, Copilot can apply Python techniques to transform data, generate visualizations, and complete complex multistep tasks. With Python enabled, Copilot can also produce visual results such as charts directly during the editing process. Users can explicitly request Python in a prompt, and Copilot will also invoke it automatically when needed.</p>
+<figure><div class="vwrap"><iframe src="https://medius.microsoft.com/Embed/video-nc/7064ca25-c746-494c-8a86-124832451c59?r=501967792371" allowfullscreen loading="lazy" title="Demo: Copilot in Excel uses Python to perform analysis"></iframe></div><figcaption>Demo: Copilot in Excel uses Python to perform analysis (video from the official Microsoft blog; an internet connection is required for playback)</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="ppt">Copilot in PowerPoint: Image editing options and public web grounding</h3>
+
+<p><strong>Choose an image generation model</strong><span class="tag done">Rolled out in April</span><br>
+When creating or editing an image, users can choose which image model to use, including GPT-Image and Flux, or let the “Auto” setting select the model best suited to the current need. When users generate visuals for a slide or modify an existing image, Copilot routes the prompt to the selected model and returns a result that can be iterated on. Model choice allows image generation to align more closely with team expectations for quality, style, and governance requirements.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUFReEJsbg.png" alt="Copilot image model selector in PowerPoint" loading="lazy" width="999" height="359"><figcaption>Copilot image model selector in PowerPoint</figcaption></figure>
+
+<p><strong>Microsoft AI Image 2 Efficient model</strong><span class="tag done">Rolled out in April</span><br>
+Users can now edit images with the Microsoft AI Image 2 Efficient model, delivering high-quality creation and editing results faster. Whether generating new visuals from a prompt or refining an existing image, users can quickly iterate toward the desired style, tone, and content. The model's performance and efficiency improvements let teams produce polished, presentation-ready visuals without leaving Microsoft 365.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUY3TUZPWg.png" alt="Creating an image with the MAI Image 2 Efficient model" loading="lazy" width="999" height="458"><figcaption>Creating an image with the MAI Image 2 Efficient model</figcaption></figure>
+
+<p><strong>Use public webpages as source material</strong><span class="tag done">Rolled out in April</span><br>
+When creating presentations, Copilot can now use public webpages as source material, letting users ground slides in the latest external information without copying and pasting. After a webpage reference is added, Copilot extracts the relevant context and generates an initial outline and slides that can be further refined, helping users create more accurate, reliably sourced presentations within Microsoft 365.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTAyTUlsTA.png" alt="Presentation generated by Copilot from a public webpage" loading="lazy" width="999" height="458"><figcaption>Presentation generated by Copilot from a public webpage</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="word">Copilot in Word: New Claude model</h3>
+<p><span class="tag done">Rolled out in April</span>Copilot in Word now offers a Claude model option, giving users another high-quality large-model choice when drafting or editing content. Users can select an Anthropic model in addition to the OpenAI model family, and Copilot runs the same editing workflow with the selected model. For teams that prefer specific model behaviors, this provides more flexibility within a governed environment.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTZ4UnpLaQ.png" alt="Copilot model selector in Word now includes the Claude model" loading="lazy" width="999" height="458"><figcaption>Copilot model selector in Word now includes the Claude model</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="teams">Copilot in Teams: Call delegation and consecutive interpretation</h3>
+
+<p><strong>Copilot call delegation</strong><span class="tag soon">Rolling out in May</span><br>
+Users can now authorize Copilot to handle Teams calls on their behalf. Once enabled in Teams call settings, Copilot can help answer incoming calls and ask callers for background information so users can decide whether to take the call. It can also schedule follow-up appointments through Microsoft Bookings, ensuring users do not miss callers who truly matter.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LU96c1huTA.png" alt="Copilot call delegation in the Teams Calls tab" loading="lazy" width="999" height="564"><figcaption>Copilot call delegation in the Teams Calls tab</figcaption></figure>
+
+<p><strong>Consecutive interpretation</strong><span class="tag done">Public preview in April</span><br>
+Consecutive interpretation is a new mode for Interpreter in Microsoft Teams that makes bilingual meeting collaboration feel more natural. In this mode, interpretation begins only after each speaker finishes, creating an alternating rhythm that more closely reflects how people communicate in multilingual conversations. Consecutive interpretation also places the interpreter on the meeting stage, where everyone can see and hear them, making it easier to follow the pace, join the discussion, and stay aligned. Interpreter now supports two modes: real-time simultaneous interpretation, introduced last year, and consecutive interpretation, designed for back-and-forth conversations.</p>
+<figure><div class="vwrap"><iframe src="https://medius.microsoft.com/Embed/video-nc/168f767e-aa78-448e-a149-f9a943658120?r=144628606261" allowfullscreen loading="lazy" title="Demo: Consecutive interpretation mode in Teams Interpreter"></iframe></div><figcaption>Demo: Consecutive interpretation mode in Teams Interpreter (video from the official Microsoft blog; an internet connection is required for playback)</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="onedrive">Copilot in OneDrive: Ready-to-use prompts</h3>
+<p><span class="tag done">Rolled out in April</span>The OneDrive file preview now includes discoverable entry points for Copilot actions, showing users what Copilot can do as soon as they open a file. Also available in SharePoint, the feature displays a set of ready-made prompts next to the Copilot button, helping users directly perform tasks such as summarizing content and generating FAQs without creating a prompt from scratch. This lowers the barrier to getting started with Copilot and makes its use more consistent across content types.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVdqY2NZOQ.png" alt="Ready-made Copilot prompts in OneDrive file preview" loading="lazy" width="999" height="562"><figcaption>Ready-made Copilot prompts in OneDrive file preview</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="agentstore">Submit agents to the Agent Store through Agent Builder</h3>
+<p><span class="tag soon">Rolling out in May</span>Agent Builder adds a submission and approval workflow: before an agent can be published to the organization's Agent Store catalog, it must be submitted to an administrator for review and approval. This helps organizations distribute high-quality internal agents at scale while allowing IT administrators to maintain control. Once approved, the agent appears in the Agent Store's “Built by your org” section for users across the organization to discover and install.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVdyNnd4aw.png" alt="Submit to organization catalog menu in Agent Builder" loading="lazy" width="404" height="471"><figcaption>Submit to organization catalog menu in Agent Builder</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="outlook">Copilot in Outlook: Draft directly on the canvas</h3>
+<p><span class="tag done">Rolled out in new Outlook in March</span>Copilot in Outlook now writes a first draft directly on the compose canvas and can continue iterating with the user to improve it. Rather than generating a one-off draft, it writes in place, asks clarifying questions about the objective, audience, or tone, and then updates the email in place based on the user's answers. With just a few quick interactions, users can refine an email until it is ready to send. Every change remains clearly visible in Outlook, with no copying and pasting or unexpected formatting issues.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXhLWXJFSw.png" alt="Copilot in Outlook drafting directly on the canvas" loading="lazy" width="999" height="562"><figcaption>Copilot in Outlook drafting directly on the canvas</figcaption></figure>
+</section>
+
+<h2>IT admin capabilities</h2>
+
+<section class="card">
+<h3 id="dashboard">Copilot Dashboard: Export by day and power-user insights</h3>
+
+<p><strong>Export by day</strong><span class="tag soon">Public preview in May; rolling out globally in August</span><br>
+Administrators can now make faster decisions about license allocation or intervention adjustments based on the latest Copilot adoption and impact data. Export by day lets them download de-identified Copilot usage metrics aggregated by user and date for the past 28 days, enabling faster, more data-informed judgments about adoption and licensing.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LUI1S3dCVQ.png" alt="Export data button in the Copilot Dashboard" loading="lazy" width="999" height="951"><figcaption>Export data button in the Copilot Dashboard</figcaption></figure>
+
+<p><strong>Power users insights</strong><span class="tag soon">Rolling out in May</span><br>
+Administrators can now identify the most engaged Copilot users and direct enablement resources where they will have the greatest effect on sustained adoption. In the updated Adoption tab of the Copilot Dashboard, this feature categorizes users as power users, habitual users, novice users, or non-users of Copilot based on frequency and consistency of use. This helps organizations activate internal advocates, identify repeatable workflows, and scale enablement across the organization.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTZKcjFOdA.png" alt="Power-user insights in the Adoption tab of the Copilot Dashboard" loading="lazy" width="889" height="999"><figcaption>Power-user insights in the Adoption tab of the Copilot Dashboard</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="admin">Microsoft 365 admin center: New billing management and organizational message options</h3>
+
+<p><strong>Prepaid capacity pack credits as the sole billing method</strong><span class="tag done">Rolled out in April</span><br>
+The Microsoft 365 admin center now supports setting prepaid capacity pack credits as the sole billing method for supported pay-as-you-go Copilot experiences, enabling usage-based billing scenarios while avoiding additional pay-as-you-go charges. Administrators can create capacity pack policies to ensure that users covered by a policy consume only available prepaid credits, making spending more predictable and better aligned with internal budgets.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LXhTN1ZKbQ.png" alt="Billing and usage page in the Microsoft 365 admin center" loading="lazy" width="999" height="562"><figcaption>Billing and usage page in the Microsoft 365 admin center</figcaption></figure>
+
+<p><strong>Email delivery for organizational messages</strong><span class="tag done">Rolled out in April</span><br>
+Organizational messages in the Microsoft 365 admin center can now be delivered by email in addition to Windows touchpoints such as the taskbar, Spotlight, notifications, and Teams pop-up prompts. This gives administrators another familiar communication channel while keeping message management centralized in the same workflow. The new email channel extends reach, reduces reliance on separate tools, and simplifies change communications.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTE2Y0xLWQ.png" alt="Prebuilt six-week email template content in organizational messages" loading="lazy" width="341" height="273"><figcaption>Prebuilt six-week email template content in organizational messages</figcaption></figure>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LTVEWHBGWQ.png" alt="Five placements for organizational messages in the admin center" loading="lazy" width="312" height="519"><figcaption>Five placements for organizational messages in the admin center</figcaption></figure>
+
+<p><strong>User segments for organizational messages</strong><span class="tag done">Rolled out in April</span><br>
+Administrators can now target organizational messages to dynamic audiences driven by usage behavior, rather than being limited to static user groups. For example, they can send a message specifically to users who “have not yet tried a feature,” making communication more relevant and better timed. This helps increase engagement while minimizing noise—reaching the right people with the right message.</p>
+<figure><img src="assets/2026-04/bS00NTEwOTM1LVUwRlRXTA.png" alt="Selecting a target user segment for an organizational message in the admin center" loading="lazy" width="862" height="457"><figcaption>Selecting a target user segment for an organizational message in the admin center</figcaption></figure>
+</section>
+
+<div class="note">
+<strong>Did you know?</strong> The <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" rel="noopener">Microsoft 365 Roadmap</a> provides the latest updates on productivity apps and intelligent cloud services, while the <a href="https://learn.microsoft.com/microsoft-365-copilot/release-notes" target="_blank" rel="noopener">Microsoft 365 Copilot release notes</a> list Copilot features that have reached general availability across platforms (Current Channel for Microsoft 365 apps). Check them regularly to see which features are in development, rolling out soon, or generally available. Please note that all dates mentioned in this article are tentative and may change.
+</div>
+
+<footer>
+<p>This page is the English edition of the Chinese compilation of the original English article. Refer to the official original for authoritative content and cutoff dates.<br>
+Original title: <em>What's New in Microsoft 365 Copilot | April 2026</em>, by Seth Patton, published on Microsoft Tech Community (April 30, 2026; updated May 13).<br>
+Original link: <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--april-2026/4510935" target="_blank" rel="noopener">techcommunity.microsoft.com</a></p>
+</footer>
+  </main>
+</div>
+
+</div>
+<a class="back-to-overview" href="#monthly-overview" aria-label="Back to this month at a glance" title="Back to this month at a glance">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 7 5-5 5 5M12 2v12M4 17h16M4 22h16"/></svg>
+  <span>Overview</span>
+</a>
+</body>
+</html>

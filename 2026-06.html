@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft 365 Copilot 新功能速览 | 2026 年 6 月</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/language-switcher.css">
+</head>
+<body class="page-month">
+<div class="wrap">
+<nav class="language-switcher" aria-label="语言切换">
+<a href="2026-06.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a>
+<a href="2026-06-tc.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+<a href="2026-06-en.html" lang="en" hreflang="en">English</a>
+</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 id="month-navigation-title">月度导航</h2>
+    <nav class="month-links" aria-labelledby="month-navigation-title">
+      <a href="2026-08.html">2026 年 8 月</a>
+      <a href="2026-07.html">2026 年 7 月</a>
+      <a href="2026-06.html" aria-current="page">2026 年 6 月</a>
+      <a href="2026-05.html">2026 年 5 月</a>
+      <a href="2026-04.html">2026 年 4 月</a>
+    </nav>
+    <a class="back" href="index.html">&#8592; 返回月份总目录</a>
+  </aside>
+  <main class="content" id="main">
+
+<header class="hero">
+  <p class="kicker">MICROSOFT 365 COPILOT 博客</p>
+  <h1>Microsoft 365 Copilot 新功能速览 | 2026 年 6 月</h1>
+  <p class="meta">作者：Seth Patton（Microsoft）· 发布日期：2026 年 6 月 30 日 ·
+  <a href="https://techcommunity.microsoft.com/blog/Microsoft365CopilotBlog/what%E2%80%99s-new-in-microsoft-365-copilot--june-2026/4529572" target="_blank" rel="noopener">查看英文原文</a></p>
+</header>
+
+<p class="lead">本文为 Microsoft 365 Copilot 官方月度更新（2026 年 6 月刊）的中文整理版。每月我们都会梳理新增功能与改进，帮助 Microsoft 365 客户及时了解 Copilot 的最新能力，让用户在日常所用的应用中更高效地完成工作。</p>
+<figure class="banner"><img src="assets/2026-06/bS00NTI5NTcyLWZLSFFUZw.png" alt="文章配图" loading="lazy" width="999" height="208"></figure>
+
+<nav class="toc" id="monthly-overview" aria-labelledby="monthly-overview-title" tabindex="-1">
+  <h2 id="monthly-overview-title">本月更新概览</h2>
+  <strong>面向用户的能力</strong>
+  <ul>
+    <li><a href="#cowork">Copilot Cowork 正式发布（GA）</a></li>
+    <li><a href="#chat">Copilot 应用与 Chat：引文与推理能力增强</a></li>
+    <li><a href="#notebooks">Copilot Notebooks：新增引用源与开放范围</a></li>
+    <li><a href="#outlook">Outlook 中的 Copilot：设置入口与局部润色</a></li>
+    <li><a href="#word">Word 中的 Copilot：文档编辑能力提升</a></li>
+    <li><a href="#ppt">PowerPoint 中的 Copilot：品牌套件、技能与引用源</a></li>
+    <li><a href="#excel">Excel 中的 Copilot：技能、个性化与规则表</a></li>
+    <li><a href="#agents">Copilot 代理：Planner 代理上线，Researcher 可选模型</a></li>
+  </ul>
+  <strong>面向 IT 管理员的能力</strong>
+  <ul>
+    <li><a href="#admin">Microsoft 365 管理中心：新的采用与管理能力</a></li>
+    <li><a href="#purview">Purview 数据丢失防护：外部邮件限制与 Cowork 管控</a></li>
+  </ul>
+</nav>
+
+<h2>面向用户的能力</h2>
+
+<section class="card">
+<h3 id="cowork">Copilot Cowork 正式发布（GA）</h3>
+
+<div class="highlight">
+Copilot Cowork 是一套能够自主规划、执行并交付真实工作成果的代理式系统，现已在全球范围内正式发布。用户只需定义任务，Cowork 就会从头到尾执行完毕，交付的是<strong>完成品</strong>，而不是草稿或建议。Cowork 由 Work IQ 驱动，每一项任务都基于企业实际运行的系统进行接地，因此产出能够反映真实的业务上下文。Cowork 采用按用量计费（usage-based billing），管理员可以通过 Microsoft 365 管理中心中新增的<strong>成本管理仪表板</strong>监控额度消耗、管理预算并控制支出。
+</div>
+
+<ul class="feat">
+  <li><strong>Chat 与 Cowork 一键切换</strong><span class="tag done">6 月已推出</span><br>
+  Microsoft 365 Copilot 应用中新增了切换开关，用户可以在 Chat 与 Cowork 之间轻松切换——前者侧重「获得答案」，后者侧重「完成行动」。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXF1cFJxcQ.png" alt="Copilot Cowork 主页及 Chat / Cowork 切换开关" loading="lazy" width="999" height="704"><figcaption>Copilot Cowork 主页及 Chat / Cowork 切换开关</figcaption></figure>
+
+  <li><strong>按任务自动选择模型</strong><span class="tag done">6 月已在 Frontier 推出</span><br>
+  Cowork 现在可以为不同任务挑选最合适的模型：借助 OpenAI GPT-5.5 Thinking 处理复杂推理，选用 Anthropic 模型完成 PowerPoint 与图形等视觉类工作，或用 GPT-5.5 进行带引文的深度调研。用户无需手动选择模型，就能针对不同类型的工作获得更贴合的支持。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXg2V1ZERQ.png" alt="Cowork 中的模型选择器" loading="lazy" width="999" height="536"><figcaption>Cowork 中的模型选择器</figcaption></figure>
+
+  <li><strong>更多插件接入</strong><span class="tag done">6 月已推出</span><br>
+  Cowork 支持的插件进一步扩充，用户可以在工作流中直接访问更多业务系统。插件商店新增 Enosix、Harvey、LSEG、Miro、monday.com、Moody's、Morningstar、S&amp;P Global Energy 和 TeamsMaestro，Databricks 可通过旁加载（sideloading）使用。此外还支持 Microsoft Fabric 以及包含 Sales、Customer Service 和 ERP 应用在内的完整 Dynamics 365 产品组合。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXF0ZmtRNQ.png" alt="Cowork「自定义」界面中添加和管理插件" loading="lazy" width="999" height="702"><figcaption>Cowork「自定义」界面中添加和管理插件</figcaption></figure>
+
+  <li><strong>自定义技能</strong><span class="tag done">6 月已推出</span><br>
+  用户现在可以通过「自定义（Customize）」选项卡便捷地创建、编辑和管理自定义技能，让 Cowork 按照自己的方式工作。技能本质上是一组自定义指令；用户可以随时间不断打磨完善，也可以把自己的工作流与合作伙伴提供的、或通过插件在全组织部署的技能组合使用。这让团队无需每次重写提示词，就能把重复性任务标准化。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXNaS25NTQ.png" alt="Cowork「自定义」页面中创建与管理技能" loading="lazy" width="999" height="708"><figcaption>Cowork「自定义」页面中创建与管理技能</figcaption></figure>
+
+  <li><strong>直接创建和编辑视觉素材</strong><span class="tag done">6 月已推出</span><br>
+  Cowork 现在可以直接创建和编辑视觉素材，包括演示文稿配图、文档插图和邮件图片。该能力由 OpenAI 的 ChatGPT Images 2.0 驱动，用户无需切换工具即可在工作流中生成视觉内容。此外，Cowork 还能调用组织素材库中已定义品牌规范的 PowerPoint 模板，从一开始就使用经批准的配色、字体、徽标和版式，大幅减少演示文稿生成后的手动排版和品牌校正工作。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWRsa3Budg.png" alt="Cowork 使用品牌模板生成的演示文稿" loading="lazy" width="999" height="562"><figcaption>Cowork 使用品牌模板生成的演示文稿</figcaption></figure>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLVdlZHkyQQ.png" alt="Cowork 直接创建和编辑视觉素材" loading="lazy" width="999" height="705"><figcaption>Cowork 直接创建和编辑视觉素材</figcaption></figure>
+
+  <li><strong>通过 Edge 浏览器跨系统办公</strong><span class="tag done">6 月已在 Frontier 推出</span><br>
+  Cowork 可以使用 Edge 浏览器，在组织的业务系统、网站和内网站点之间执行工作。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWRPcE5tNg.png" alt="Cowork 通过浏览器自动化完成报销流程" loading="lazy" width="998" height="691"><figcaption>Cowork 通过浏览器自动化完成报销流程</figcaption></figure>
+
+  <li><strong>移动端支持（iOS 与 Android）</strong><span class="tag done">6 月已推出</span><br>
+  Cowork 现已支持移动端。用户可以在一台设备上开始工作，然后在另一台设备上无缝续接，上下文和对话完整保留，移动端用户也能完整使用 Cowork 而不丢失进度。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWNWTUF4Tw.png" alt="移动设备上的 Cowork 任务列表" loading="lazy" width="648" height="673"><figcaption>移动设备上的 Cowork 任务列表</figcaption></figure>
+
+  <li><strong>长任务推送通知</strong><span class="tag done">6 月已推出</span><br>
+  对于长时间运行的任务，Cowork 会通过推送通知告知审批请求、输入请求和完成情况。用户无需时刻盯着进行中的任务，可以在 Cowork 完成工作的同时继续处理自己手头的事情。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW9uYWh3RQ.png" alt="Cowork 在移动端推送任务完成通知" loading="lazy" width="593" height="852"><figcaption>Cowork 在移动端推送任务完成通知</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="chat">Copilot 应用与 Chat：引文与推理能力增强</h3>
+
+<ul class="feat">
+  <li><strong>对 Power BI 企业数据进行推理</strong><span class="tag done">6 月已在 Frontier 计划推出</span><br>
+  借助 Work IQ，Microsoft 365 Copilot 现在能够对 Power BI 企业数据进行推理，直接基于 Power BI 报表和语义模型给出有据可依的答案。用户用自然语言提问即可获得准确回答，无需自行编写查询，把受治理的 BI 数据引入 Copilot 体验，更快获得可信洞察。</li>
+
+  <li><strong>搜索与查询 Dataverse 业务数据</strong><span class="tag soon">6 月公开预览，9 月正式发布</span><br>
+  同样借助 Work IQ，Copilot 现在可以搜索和查询 Dataverse 中的业务数据，把业务线记录带入各类 Copilot Chat 体验的工作流中。用户可以用自然语言询问 Dataverse 数据并获得有据可依的答案，无需离开 Copilot，从而把 Copilot 的触达范围扩展到组织存放在 Dataverse 中的结构化业务数据。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXlUb1JLRA.png" alt="Copilot 回复中包含 Dataverse 数据的引文" loading="lazy" width="624" height="350"><figcaption>Copilot 回复中包含 Dataverse 数据的引文</figcaption></figure>
+
+  <li><strong>深度引文（Deep citations）</strong><span class="tag done">6 月已推出</span><br>
+  深度引文让用户能够核验 Copilot 的结果：链接会直接指向被引用文件中的<strong>具体位置</strong>，而不只是整个文件。该功能首批支持 Word 和 PowerPoint 文件，后续将扩展至会议、网页和 PDF 引用源。让用户能够把答案追溯回源头，有助于建立对 Copilot 输出的信任。</li>
+
+  <li><strong>重新生成（Regenerate）</strong><span class="tag done">6 月已推出</span><br>
+  全新的「重新生成」操作提供「再试一次」和「切换模型」等简单选项，用户可以直接在 Copilot Chat 中为最近一条提示词获取另一版回答。无需从头开始，即可就地探索不同答案并优化输出，从而提升质量、找到最合适的那一版回复。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXpMaGV6Mg.png" alt="Copilot Chat 中的「重新生成」操作" loading="lazy" width="624" height="322"><figcaption>Copilot Chat 中的「重新生成」操作</figcaption></figure>
+
+  <li><strong>视觉能力（Vision）</strong><span class="tag soon">7 月推出</span><br>
+  当工作依赖于「所见之物」时，Microsoft 365 Copilot 的视觉能力可帮助用户更快得到答案。用户不必费力描述某个仪表板、文档、图片、报错信息或现实中的物体，而是可以直接展示给 Copilot 看，并通过语音对话提问。Copilot 会结合这些视觉上下文以及可用的工作与网络上下文，解释眼前的内容、给出洞察并指引下一步。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWlRbDdLcA.png" alt="Microsoft 365 Copilot 的视觉能力" loading="lazy" width="999" height="562"><figcaption>Microsoft 365 Copilot 的视觉能力</figcaption></figure>
+
+  <li><strong>Copilot Page 的「建议修改」</strong><span class="tag done">6 月已推出</span><br>
+  用户现在可以在 Copilot 快捷菜单中选择「建议修改（Suggested edits）」，获得针对 Copilot Page 的可执行反馈。Copilot 会分析页面内容，在行内给出改进清晰度和质量的意见与建议，用户可直接应用到页面上，无需切换工具即可快速打磨成果、保持工作节奏。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUxnSVo0Yw.png" alt="Copilot Page 中的「建议修改」" loading="lazy" width="999" height="562"><figcaption>Copilot Page 中的「建议修改」</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="notebooks">Copilot Notebooks：新增引用源与开放范围</h3>
+
+<p><strong>把 Outlook 邮件作为引用源</strong><span class="tag soon">7 月推出</span><br>
+用户可以把 Outlook 邮件添加为 Copilot Notebooks 的引用源。将邮件内容纳入笔记本后，Copilot 就能基于驱动工作进展的那些对话、决策和上下文来作答，从而把邮件语境与更广泛的笔记本工作区连接起来。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXlVbXY0cA.png" alt="将 Outlook 邮件添加为 Notebooks 引用源" loading="lazy" width="999" height="562"><figcaption>将 Outlook 邮件添加为 Notebooks 引用源</figcaption></figure>
+
+<p><strong>向 Copilot Chat 用户开放</strong><span class="tag done">6 月已推出</span><br>
+Copilot Notebooks 此前仅面向 Microsoft 365 Copilot 授权用户，现已开始向 Copilot Chat 用户推出。更多团队成员因此获得了一个共享空间，可以在其中汇集项目上下文、基于引用源开展工作，并把这些信息转化为思维导图和学习指南等实用工具。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXlYUTMwaA.png" alt="Copilot Notebooks 的使用界面" loading="lazy" width="999" height="545"><figcaption>Copilot Notebooks 的使用界面</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="outlook">Outlook 中的 Copilot：设置入口与局部润色</h3>
+
+<p><strong>经典版 Outlook for Windows 的 Copilot 设置入口</strong><span class="tag soon">7 月推出</span><br>
+经典版 Windows Outlook 现在提供了各项 Copilot 设置的直接入口，用户无需离开 Outlook 即可查找和调整 Copilot 选项，管理体验更加便捷。</p>
+
+<p><strong>在撰写画布中局部润色邮件草稿</strong><span class="tag done">6 月已在 Web 端推出</span><br>
+用户现在可以直接在撰写画布中用 Copilot 优化邮件草稿：选中草稿中的某一段落，即可让 Copilot 调整其长度、语气或结构，轻松完成有针对性的修改，而不必重写整封邮件。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW05OVZBOA.png" alt="在 Outlook 撰写画布中用 Copilot 局部润色" loading="lazy" width="999" height="598"><figcaption>在 Outlook 撰写画布中用 Copilot 局部润色</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="word">Word 中的 Copilot：文档编辑能力提升</h3>
+
+<ul class="feat">
+  <li><strong>可选择模型</strong><span class="tag done">6 月已推出</span><br>
+  Word 中的 Copilot 现已支持模型选择，用户在编辑文档时可以选用 Anthropic 模型。对于改写、摘要、重组结构和内容润色等任务，写作者可以按工作类型挑选最合适的模型，从而更好地控制编辑体验，更有把握地获得理想的语气、结构和详略程度，不必反复重写提示词或推倒重来。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW9OSXpPdQ.png" alt="Word 中 Copilot 的模型选择菜单" loading="lazy" width="427" height="542"><figcaption>Word 中 Copilot 的模型选择菜单</figcaption></figure>
+
+  <li><strong>Copilot Catchup 内容卡片</strong><span class="tag done">6 月已推出</span><br>
+  Copilot Catchup 现以内容卡片的形式呈现，快速概述自用户上次打开文档以来发生了哪些变化。用户不必重读全文去找更新点，一上来就能看到简要回顾，是快速跟上共享文档和持续演进文件进度的高效方式。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWZTckNqQg.png" alt="Copilot Catchup 内容卡片界面" loading="lazy" width="999" height="910"><figcaption>Copilot Catchup 内容卡片界面</figcaption></figure>
+
+  <li><strong>创建并插入图像</strong><span class="tag done">6 月已推出</span><br>
+  用户现在可以用 Word 中的 Copilot 创建并插入图像。Copilot 会作为代理式编辑流程的一部分生成图像并就地嵌入，把图像创作直接带入 Word 的写作体验中。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW9BZGY5Rg.png" alt="Copilot 在 Word 中生成并插入图像" loading="lazy" width="616" height="791"><figcaption>Copilot 在 Word 中生成并插入图像</figcaption></figure>
+
+  <li><strong>iOS 端代理式编辑能力</strong><span class="tag done">6 月已推出</span><br>
+  Word 中 Copilot 的代理式能力现已登陆 iOS，用户可以在 iPhone 或 iPad 上编辑文档、添加内容。核心写作支持覆盖了需要随时推进工作的移动场景：用户可以在移动设备上快速更新、起草新内容、润色已有文字；而插入图像、修订跟踪等更高阶操作则可在完整版 Word 中完成。</li>
+
+  <li><strong>保留 Copilot Chat 对话历史</strong><span class="tag done">6 月已推出</span><br>
+  Word 现在会把 Copilot Chat 中的对话历史从聊天延续到应用内，用户可以从上次中断的地方接着做，不会丢失会话线索，让复杂的多步骤文档工作保持连贯。</li>
+
+  <li><strong>基于批注内容进行修改</strong><span class="tag done">6 月已推出</span><br>
+  Copilot 能够读懂批注内容并据此推理、对文档实施相应修改。用户不必再手动逐条处理反馈，可以直接让 Copilot 落实建议的改动，从而加快协作文档的修订循环。</li>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="ppt">PowerPoint 中的 Copilot：品牌套件、技能与引用源</h3>
+
+<p><strong>品牌套件选择器（Brand Kit Picker）</strong><span class="tag done">6 月已推出</span><br>
+品牌套件选择器让用户轻松制作符合组织认可品牌模板的演示文稿。用 Copilot 创建演示文稿时，用户可以选择管理员批准的品牌套件，从一开始就应用正确的配色、字体和视觉风格，帮助团队更快产出精美且符合品牌规范的文稿，减少生成后的手动排版和品牌校正。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXZIY1kzVg.png" alt="PowerPoint 中选择品牌套件" loading="lazy" width="651" height="375"><figcaption>PowerPoint 中选择品牌套件</figcaption></figure>
+
+<p><strong>创建并复用 Copilot 技能</strong><span class="tag done">7 月已推出</span><br>
+用户将能够为可重复的 PowerPoint 制作任务创建并复用 Copilot 技能。把常用指令保存为技能后，就能以标准化的方式构建、优化和排版演示文稿，无需每次重新编写相同的提示词。</p>
+
+<p><strong>引用 SharePoint 库与 OneDrive 文件夹</strong><span class="tag done">6 月已推出</span><br>
+用 Copilot 制作演示文稿时，用户现在可以引用 SharePoint 库和 OneDrive 文件夹。Copilot 会基于这些来源，让演示文稿接地于组织已有的内容，从而产出真正反映特定材料的文稿，而不是依赖泛泛的通用信息。</p>
+</section>
+
+<section class="card">
+<h3 id="excel">Excel 中的 Copilot：技能、个性化与规则表</h3>
+
+<p><strong>技能（Skills）</strong><span class="tag done">6 月已推出</span><br>
+用户现在可以在 Excel 中使用技能，把可重复的工作流打包成可复用的指令。团队可以为常见的分析、建模或报表任务创建自定义技能，并在 Excel 中随时调用，从而在不重复编写相同提示词的前提下把复杂工作标准化。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUZtUndKTA.png" alt="Excel 中 Copilot 的技能管理选项" loading="lazy" width="526" height="562"><figcaption>Excel 中 Copilot 的技能管理选项</figcaption></figure>
+
+<p><strong>个性化（Personalization）</strong><span class="tag done">6 月已推出</span><br>
+Excel 中的 Copilot 现已支持个性化设置：用户只需设定一次长期偏好，Copilot 就会在所有工作簿中一致地遵循。用户可以定义格式、命名规范、公式、数据透视表和报表样式方面的指导原则，让 Copilot 的编辑符合自己的工作习惯，而不必在每条提示词中重复交代。这让输出更一致、返工更少，用户对 Copilot 如何编辑表格也拥有更强的掌控力。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUtWbHU4aw.png" alt="Excel 中的「自定义 Copilot」个性化设置" loading="lazy" width="999" height="728"><figcaption>Excel 中的「自定义 Copilot」个性化设置</figcaption></figure>
+
+<p><strong>工作簿规则表（Workbook rules sheets）</strong><span class="tag done">6 月已推出</span><br>
+Excel 中的 Copilot 新增了工作簿规则表，让团队能够定义随特定工作簿一同保留的标准。规则可以写入 <code>.Rules</code> 工作表，涵盖结构、格式、命名、公式约定和示例，从而确保所有使用 Copilot 编辑该文件的人都遵循同一套针对本工作簿的规范。规则还可以引用示例、公式、单元格区域和其他工作表，便于在 Excel 中直接把重复使用的模板和团队工作流标准化。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLW1Ncm5Sdg.png" alt="Excel 工作簿中的 .Rules 规则表" loading="lazy" width="999" height="532"><figcaption>Excel 工作簿中的 .Rules 规则表</figcaption></figure>
+</section>
+
+<section class="card">
+<h3 id="agents">Copilot 代理：Planner 代理上线，Researcher 可选模型</h3>
+
+<p><strong>Researcher 代理的模型与模式选择</strong><span class="tag done">6 月已推出</span><br>
+将 Researcher 代理添加到 Copilot 对话后，用户现在可以直接在会话中从受支持的 Researcher 模型和模式中进行选择，把每次调研任务的深度和方式掌握在自己手中，团队也能更灵活地为不同任务匹配合适的模型。</p>
+
+<p><strong>Planner 代理</strong><span class="tag done">6 月已推出</span><br>
+Planner 代理帮助用户更高效地规划、组织和管理工作。该代理会在 Microsoft 365 Copilot 中提供交互式任务卡片和可执行的洞察，让用户轻松地在各个 Planner 计划之间排定优先级、聚焦真正重要的事情。通过自然语言提示，用户还可以创建和更新任务，或让代理生成带有目标和分组的结构化计划。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLTBJRkVZYQ.png" alt="Copilot 中的 Planner 代理任务卡片" loading="lazy" width="999" height="556"><figcaption>Copilot 中的 Planner 代理任务卡片</figcaption></figure>
+</section>
+
+<h2>面向 IT 管理员的能力</h2>
+
+<section class="card">
+<h3 id="admin">Microsoft 365 管理中心：新的采用与管理能力</h3>
+
+<ul class="feat">
+  <li><strong>组织提示词（Organization prompts）</strong><span class="tag done">6 月已推出</span><br>
+  管理员现在可以在 Microsoft 365 管理中心创建并发布组织提示词，引导用户以有效、贴合实际的方式把 Copilot 用在常见工作流中。用户可以在 Copilot Chat 的提示词建议和提示词库中找到这些组织提示词，从而养成良好的提问习惯，并探索适合自身的 Copilot 应用场景。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXZ3V3BHQQ.png" alt="Copilot 中显示的组织提示词" loading="lazy" width="999" height="631"><figcaption>Copilot 中显示的组织提示词</figcaption></figure>
+
+  <li><strong>成本管理仪表板</strong><span class="tag done">6 月已推出</span><br>
+  管理中心的成本管理仪表板提供了一个集中入口，用于启用、管理和优化按用量计费的 AI 体验（包括 Copilot Cowork）的支出。管理员可以分配 Copilot 额度（Copilot Credits）、按用户组制定支出策略和限额，并在预付额度与按量付费两种计费模式之间选择。报表、预算、告警和硬性上限等机制帮助组织监控用量、控制成本、管理支出。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLXAyZzczWQ.png" alt="Microsoft 365 管理中心的成本管理页面" loading="lazy" width="999" height="550"><figcaption>Microsoft 365 管理中心的成本管理页面</figcaption></figure>
+
+  <li><strong>团队级成本报表</strong><span class="tag soon">7 月推出</span><br>
+  Insights 中还将提供一个仪表板，按用户组或团队维度呈现成本报表，让团队负责人了解本团队的 Copilot 额度使用情况。该仪表板默认启用，面向至少有 5 名直接下属的管理者，以及 Insights 分析师和全局管理员开放，帮助管理者快速理解并管控 AI 支出。</li>
+
+  <li><strong>代理指标可用于自定义报表</strong><span class="tag soon">7 月公开预览，9 月正式可用</span><br>
+  Insights 中将提供代理（agent）相关指标，分析师可以把细粒度的代理使用数据与组织上下文结合起来，识别采用趋势、制作定制报表并做出数据驱动的决策，而不必依赖预置的仪表板。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLUNaeE5SSQ.png" alt="分析师工作台中的自定义代理报表" loading="lazy" width="998" height="714"><figcaption>分析师工作台中的自定义代理报表</figcaption></figure>
+
+  <li><strong>组织消息支持混合加入设备</strong><span class="tag done">6 月已推出</span><br>
+  组织消息现已支持混合加入（hybrid-joined）设备，管理员可以向那些同时连接到本地 Active Directory 和 Microsoft Entra ID 的设备用户投放定向的产品内沟通。这在混合身份配置常见的企业环境中扩大了消息触达范围，帮助组织持续推动用户对 Copilot、代理及其他 Microsoft 365 体验的认知、上手与采用，也补齐了设备覆盖上的一个关键缺口。</li>
+
+  <li><strong>视觉能力（Vision）管控开关</strong><span class="tag done">6 月已推出</span><br>
+  管理员现在拥有针对 Microsoft 365 中视觉能力的管控开关——该能力会把屏幕共享或摄像头共享的图像流作为模型输入。组织因此可以自主决定在何时、何处允许使用视觉能力。</li>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLTJqcmI2dA.png" alt="管理设置页中的屏幕与摄像头共享开关" loading="lazy" width="780" height="566"><figcaption>管理设置页中的屏幕与摄像头共享开关</figcaption></figure>
+</ul>
+</section>
+
+<section class="card">
+<h3 id="purview">Purview 数据丢失防护：外部邮件限制与 Cowork 管控</h3>
+
+<p><strong>限制引用外部邮件</strong><span class="tag soon">6 月公开预览，7 月正式发布</span><br>
+Microsoft Purview 数据丢失防护（DLP）现在可以限制 Microsoft 365 Copilot 和 Copilot Chat 引用外部邮件。管理员可以借此排除来自外部发件人的邮件，使其不被摘要、引用或用作 Copilot 回复的接地数据。这有助于降低外部、第三方或未经审核的信息出现在 AI 生成内容中的风险，同时让用户仍能基于可信的内部内容高效工作。该能力适用于 Microsoft 365 Copilot，以及在 Copilot Studio 中构建并发布到 Microsoft 365 Copilot、仅使用 Microsoft 365 数据的代理。</p>
+
+<p><strong>Purview 管控扩展至 Cowork</strong><span class="tag done">6 月已推出</span><br>
+Microsoft Purview 的管控能力现已扩展到 Cowork，组织可以沿用管理 Microsoft 365 Copilot 的同一套工具来保障安全与合规。Cowork 支持敏感度标签继承与显示、审核日志记录、在数据安全态势管理（DSPM）活动资源管理器中查看交互内容，以及针对 Cowork 交互的内部风险管理、电子数据展示（eDiscovery）、数据生命周期管理（DLM）和通信合规。这让组织能够用熟悉的工具保护和治理 Cowork 交互。</p>
+<figure><img src="assets/2026-06/bS00NTI5NTcyLWNYQkxpbQ.png" alt="在 Purview 数据安全态势管理中查看 Cowork 交互" loading="lazy" width="999" height="478"><figcaption>在 Purview 数据安全态势管理中查看 Cowork 交互</figcaption></figure>
+</section>
+
+<div class="note">
+<strong>你知道吗？</strong> <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" rel="noopener">Microsoft 365 路线图</a> 提供生产力应用和智能云服务的最新动态；<a href="https://learn.microsoft.com/microsoft-365-copilot/release-notes" target="_blank" rel="noopener">Microsoft 365 Copilot 发行说明</a> 则列出了各平台上已正式发布（Microsoft 365 应用的当前频道）的 Copilot 功能。建议定期查看，了解哪些功能正在开发中、即将推出或已正式可用。请注意，本文提及的时间均为暂定，可能会有调整。
+</div>
+
+<footer>
+<p>本页为英文原文的中文整理版，内容与截止日期以官方原文为准。<br>
+原文标题：<em>What's New in Microsoft 365 Copilot | June 2026</em>，作者 Seth Patton，发布于 Microsoft Tech Community（2026 年 6 月 30 日，7 月 14 日更新）。<br>
+原文链接：<a href="https://techcommunity.microsoft.com/blog/Microsoft365CopilotBlog/what%E2%80%99s-new-in-microsoft-365-copilot--june-2026/4529572" target="_blank" rel="noopener">techcommunity.microsoft.com</a></p>
+</footer>
+  </main>
+</div>
+
+</div>
+<a class="back-to-overview" href="#monthly-overview" aria-label="返回本月更新概览" title="返回本月更新概览">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 7 5-5 5 5M12 2v12M4 17h16M4 22h16"/></svg>
+  <span>返回概览</span>
+</a>
+</body>
+</html>
