@@ -1,27 +1,11 @@
-Microsoft Copilot | April-August 2026 | 三語合集 / Multilingual collection
+Microsoft Copilot | April-September 2026 | 三語合集 / Multilingual collection
 ========================================================================
 
 简体中文：打开 index.html；右上角按钮切换同一页面的语言。
 繁體中文：開啟 index-tc.html；右上角按鈕切換同一頁面的語言。
 English: Open index-en.html; use the top-right buttons to switch the language of the same page.
 
-在线阅读 / 線上閱讀 / Read online
-- 简体中文：https://AlphaYang-cn.github.io/M365-Copilot-Whats-New/
-- 繁體中文：https://AlphaYang-cn.github.io/M365-Copilot-Whats-New/index-tc.html
-- English: https://AlphaYang-cn.github.io/M365-Copilot-Whats-New/index-en.html
-
-GitHub Pages 发布 / 發佈 / Publishing
-- 发布来源为 main 分支的根目录，保留全部 HTML、assets/ 和 .nojekyll；无需安装依赖或构建。
-- 發佈來源為 main 分支的根目錄，保留全部 HTML、assets/ 和 .nojekyll；無需安裝相依套件或建置。
-- Publish from the root of the main branch. Keep all HTML files, assets/, and .nojekyll; no dependencies or build step are required.
-- 后续更新推送至 main 后，GitHub Pages 会自动重新部署。
-- 後續更新推送至 main 後，GitHub Pages 會自動重新部署。
-- GitHub Pages redeploys automatically when updates are pushed to main.
-- 下方解压和离线说明适用于下载副本；在线浏览需要联网。
-- 下方解壓縮和離線說明適用於下載副本；線上瀏覽需要網路連線。
-- The extraction and offline instructions below apply to downloaded copies; online browsing requires an internet connection.
-
-18 HTML pages / 5 issues per language / 123 shared images / 8 distinct online video embeds.
+21 HTML pages / 6 issues per language / 144 shared images / 9 distinct online video embeds.
 所有语言共享 assets，移动或复制本合集时请保留整个文件夹。
 所有語言共用 assets，移動或複製本合集時請保留整個資料夾。
 All languages share assets/. Keep the whole folder together when moving or copying it.
@@ -43,17 +27,17 @@ Language switching and images work offline; videos require an internet connectio
 ========================================================================
 简体中文
 ========================================================================
-Microsoft Copilot 新功能速览 — 2026 年 4—8 月合集（中文版）
+Microsoft Copilot 新功能速览 — 2026 年 4—9 月合集（中文版）
 ================================================================
 
 【如何打开】
 1. 请先将本压缩包完整解压到任意文件夹（不要直接在压缩包内双击打开）。
 2. 双击 index.html，用浏览器打开总目录，再点击任意一期阅读。
-   也可以直接打开 2026-04.html / 2026-05.html / 2026-06.html / 2026-07.html / 2026-08.html。
+   也可以直接打开 2026-04.html / 2026-05.html / 2026-06.html / 2026-07.html / 2026-08.html / 2026-09.html。
 
 【内容说明】
-- 共 5 期，整理自 Microsoft Tech Community 的 Microsoft 365 Copilot 官方博客月度更新。
-- 已保留原文全部截图（123 张，随包离线可看）与演示视频（8 个）。
+- 共 6 期，整理自 Microsoft Tech Community 的 Microsoft 365 Copilot 官方博客月度更新。
+- 已保留原文全部截图（144 张，随包离线可看）与演示视频（9 个）。
 - 演示视频托管在微软官方服务器，播放时需要联网；不联网不影响图文阅读。
 
 【文件结构】
@@ -63,6 +47,7 @@ Microsoft Copilot 新功能速览 — 2026 年 4—8 月合集（中文版）
   2026-06.html      2026 年 6 月
   2026-07.html      2026 年 7 月
   2026-08.html      2026 年 8 月
+  2026-09.html          2026 年 9 月
   assets/           全部配图（请勿删除或移动，需与网页文件保持同一目录）
 
 【注意事项】
@@ -75,17 +60,17 @@ Microsoft Copilot 新功能速览 — 2026 年 4—8 月合集（中文版）
 ========================================================================
 繁體中文
 ========================================================================
-Microsoft Copilot 新功能速覽 — 2026 年 4—8 月合集（中文版）
+Microsoft Copilot 新功能速覽 — 2026 年 4—9 月合集（中文版）
 ================================================================
 
 【如何打開】
 1. 請先將本壓縮包完整解壓到任意文件夾（不要直接在壓縮包內雙擊打開）。
 2. 雙擊 index-tc.html，用瀏覽器打開總目錄，再點擊任意一期閱讀。
-   也可以直接打開 2026-04-tc.html / 2026-05-tc.html / 2026-06-tc.html / 2026-07-tc.html / 2026-08-tc.html。
+   也可以直接打開 2026-04-tc.html / 2026-05-tc.html / 2026-06-tc.html / 2026-07-tc.html / 2026-08-tc.html / 2026-09-tc.html。
 
 【內容說明】
-- 共 5 期，整理自 Microsoft Tech Community 的 Microsoft 365 Copilot 官方博客月度更新。
-- 已保留原文全部截圖（123 張，隨包離線可看）與演示視頻（8 個）。
+- 共 6 期，整理自 Microsoft Tech Community 的 Microsoft 365 Copilot 官方博客月度更新。
+- 已保留原文全部截圖（144 張，隨包離線可看）與演示視頻（9 個）。
 - 演示視頻託管在微軟官方服務器，播放時需要聯網；不聯網不影響圖文閱讀。
 
 【文件結構】
@@ -95,6 +80,7 @@ Microsoft Copilot 新功能速覽 — 2026 年 4—8 月合集（中文版）
   2026-06-tc.html      2026 年 6 月
   2026-07-tc.html      2026 年 7 月
   2026-08-tc.html      2026 年 8 月
+  2026-09-tc.html       2026 年 9 月
   assets/           全部配圖（請勿刪除或移動，需與網頁文件保持同一目錄）
 
 【注意事項】
@@ -107,17 +93,17 @@ Microsoft Copilot 新功能速覽 — 2026 年 4—8 月合集（中文版）
 ========================================================================
 English
 ========================================================================
-Microsoft Copilot: What's New — April-August 2026 Collection (English Edition)
+Microsoft Copilot: What's New — April-September 2026 Collection (English Edition)
 ================================================================
 
 [How to open]
 1. Extract the entire archive to any folder first. Do not open pages directly inside the compressed archive.
 2. Double-click index-en.html to open the contents page in your browser, then select an issue to read.
-   You can also open 2026-04-en.html / 2026-05-en.html / 2026-06-en.html / 2026-07-en.html / 2026-08-en.html directly.
+   You can also open 2026-04-en.html / 2026-05-en.html / 2026-06-en.html / 2026-07-en.html / 2026-08-en.html / 2026-09-en.html directly.
 
 [Contents]
-- 5 issues, compiled from the official Microsoft 365 Copilot monthly blog updates on Microsoft Tech Community.
-- All original screenshots (123 images, included for offline viewing) and demo videos (8) are retained.
+- 6 issues, compiled from the official Microsoft 365 Copilot monthly blog updates on Microsoft Tech Community.
+- All original screenshots (144 images, included for offline viewing) and demo videos (9) are retained.
 - Demo videos are hosted on official Microsoft servers and require an internet connection to play. Text and images can be viewed offline.
 
 [File structure]
@@ -127,6 +113,7 @@ Microsoft Copilot: What's New — April-August 2026 Collection (English Edition)
   2026-06-en.html      June 2026
   2026-07-en.html      July 2026
   2026-08-en.html      August 2026
+  2026-09-en.html       September 2026
   assets/           All images (do not delete or move separately; keep this folder beside the HTML files)
 
 [Important notes]

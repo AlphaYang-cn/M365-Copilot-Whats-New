@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Copilot: What&#x27;s New | September 2026</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/language-switcher.css">
+</head>
+<body class="page-month">
+<div class="wrap">
+<nav class="language-switcher" aria-label="Language selection">
+<a href="2026-09.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="2026-09-tc.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+<a href="2026-09-en.html" lang="en" hreflang="en" aria-current="page">English</a>
+</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 id="month-navigation-title">Monthly navigation</h2>
+    <nav class="month-links" aria-labelledby="month-navigation-title">
+      <a href="2026-09-en.html" aria-current="page">September 2026</a>
+      <a href="2026-08-en.html">August 2026</a>
+      <a href="2026-07-en.html">July 2026</a>
+      <a href="2026-06-en.html">June 2026</a>
+      <a href="2026-05-en.html">May 2026</a>
+      <a href="2026-04-en.html">April 2026</a>
+    </nav>
+    <a class="back" href="index-en.html">&#8592; All months</a>
+  </aside>
+  <main class="content" id="main">
+
+
+<header class="hero">
+<p class="kicker">MICROSOFT COPILOT BLOG</p>
+<h1>Microsoft Copilot: What&#x27;s New | September 2026</h1>
+<p class="meta">By Daniel_Vargas · Published September 30, 2026 · Updated October 8, 2026 · <a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107" target="_blank" rel="noopener">Read the original article</a></p>
+</header>
+<p class="lead">This edition covers Microsoft's official monthly Copilot updates for September 2026, including chat and mobile experiences, plugins and Work IQ, Teams Phone, Word, PowerPoint, SharePoint, OneDrive, as well as authoritative sources and targeted survey capabilities for administrators. The features and rollout plans below follow the order of the official article, and all timing reflects the wording used in that article.</p>
+<div class="note">Microsoft previously published an introduction to the <a href="https://aka.ms/AA13g7uq" target="_blank" rel="noopener">new Copilot: Home, Code, and Autopilot</a>, explaining how to connect existing tools and build, customize, and extend AI at work. This article continues with the month's other product updates.</div>
+<figure class="banner"><img src="assets/2026-09/bS00NTU5MTA3LThENU0xaQ.png" alt="Image from the Microsoft Copilot September update article" loading="lazy" width="999" height="208"></figure>
+<nav class="toc" id="monthly-overview" aria-labelledby="monthly-overview-title" tabindex="-1">
+<h2 id="monthly-overview-title">This month at a glance</h2>
+<strong>User capabilities</strong>
+<ul>
+<li><a href="#chat">Copilot Chat: A New Design and Enhanced Capabilities</a></li>
+<li><a href="#plugins-workiq">Copilot App: Updates to Plugins, Connectors, and Work IQ</a></li>
+<li><a href="#teams-phone">Teams Phone Agent: AI Reception for Incoming Calls</a></li>
+<li><a href="#word">Copilot in Word: Source Citations and Image Adjustments</a></li>
+<li><a href="#powerpoint">Copilot in PowerPoint: Skills, Connectors, and Background Execution</a></li>
+<li><a href="#sharepoint">Copilot in SharePoint Is Generally Available</a></li>
+<li><a href="#onedrive">Copilot in OneDrive Is Generally Available</a></li>
+</ul>
+<strong>IT admin capabilities</strong>
+<ul>
+<li><a href="#authoritative">Microsoft 365 Admin Center: Authoritative Source Management</a></li>
+<li><a href="#surveys">Copilot Dashboard: Targeted Pulse Surveys</a></li>
+</ul>
+</nav>
+<h2>User capabilities</h2>
+<section class="card">
+<h3 id="chat">Copilot Chat: A New Design and Enhanced Capabilities</h3>
+<ul class="feat">
+<li id="chat-design">
+<p><strong>A Refreshed Copilot in Teams and Outlook</strong><span class="tag done">Available in September</span></p>
+<p>Copilot in Teams and Outlook is adopting a new design consistent with the Copilot app, simplifying navigation and chat interactions while offering new ways to organize work. The redesign covers both full-screen Copilot and the in-app Copilot side pane.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LUdCM1BNbw.png" alt="The refreshed Copilot chat interface in Teams" loading="lazy" width="999" height="626"><figcaption>The refreshed Copilot chat interface in Teams</figcaption></figure>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LTRtaEptNg.png" alt="The new experience in the Teams Copilot tab" loading="lazy" width="999" height="626"><figcaption>The new experience in the Teams Copilot tab</figcaption></figure>
+</li>
+<li id="edge-new-tab">
+<p><strong>The Copilot New Tab Page in Edge</strong><span class="tag soon">Coming in October</span></p>
+<p>The new Copilot tab page will bring search, chat, and web exploration together in a single search box while presenting recommended Copilot actions and curated work content, reducing the need to switch between different entry points. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=566703" target="_blank" rel="noopener">View the roadmap</a>.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LUtCNlhUaA.png" alt="The Copilot new tab page in Microsoft Edge, bringing search, chat, and work content together" loading="lazy" width="998" height="581"><figcaption>The Copilot new tab page in Microsoft Edge, bringing search, chat, and work content together</figcaption></figure>
+</li>
+<li id="inline-agents-skills">
+<p><strong>Invoke Agents and Skills Directly in Prompts</strong><span class="tag done">Available in September</span></p>
+<p>While writing a prompt, users can invoke agents with <code>/</code> and skills with <code>@</code>, adding specialized capabilities without interrupting their flow. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569213" target="_blank" rel="noopener">View the roadmap</a>.</p>
+</li>
+<li id="scanned-pdf">
+<p><strong>More Accurate Matching for Scanned PDF Content</strong><span class="tag done">Available in September</span></p>
+<p>Copilot Chat now matches search results from scanned PDFs more effectively, helping users locate relevant information faster and spend less time searching page by page. <a href="https://www.microsoft.com/microsoft-365/roadmap?searchterms=copilot+chat+can+now+better+match+search+results#Roadmap" target="_blank" rel="noopener">View the roadmap</a>.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVpOMkprdQ.png" alt="Copilot Chat matches relevant content from a scanned PDF" loading="lazy" width="999" height="550"><figcaption>Copilot Chat matches relevant content from a scanned PDF</figcaption></figure>
+</li>
+<li id="android-editing">
+<p><strong>Copilot Editing on Android</strong><span class="tag done">Available on Android in September; available on iOS earlier this year</span></p>
+<p>Word, PowerPoint, and Excel for Android now support modifying content with Copilot, enabling users to keep working on documents, presentations, and spreadsheets from a mobile device. The corresponding capabilities became available on iOS earlier in 2026.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXIwTWtYOA.png" alt="The Copilot editing experience in Word for Android" loading="lazy" width="999" height="562"><figcaption>The Copilot editing experience in Word for Android</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="plugins-workiq">Copilot App: Updates to Plugins, Connectors, and Work IQ</h3>
+<ul class="feat">
+<li id="marketplace">
+<p><strong>New Connectors, Plugins, and Agents</strong></p>
+<p>More business systems and industry knowledge are being connected to Copilot. This month, Microsoft listed the following 33 connectors, plugins, or agents across eight industry categories; the article does not specify a rollout date for each item. Learn more through <a href="https://marketplace.microsoft.com/en-us/" target="_blank" rel="noopener">Microsoft Marketplace</a>.</p>
+<table><thead><tr><th>Industry</th><th>Connectors, plugins, and agents</th></tr></thead><tbody>
+<tr><td>Industrial and manufacturing</td><td>Autodesk, Resilinic, Vista Finance by Trimble</td></tr>
+<tr><td>Professional and business services</td><td>askpolly</td></tr>
+<tr><td>Financial services</td><td>Fiscal AI, D&amp;B Risk Analytics, D&amp;B Finance Analytics, Zacks, MT Newswires, PrivCo, S&amp;P Global Kensho, Square, Morningstar Credit Analytics</td></tr>
+<tr><td>Healthcare and life sciences</td><td>AMASS, Cortellis Regulatory Intelligence, SciLeads, Causaly, BioRender, ClinicalTrials.gov, PubMed, PopHive, bioRxiv, DrugBank, CAS, Open Targets, NPI Registry, MedlinePlus</td></tr>
+<tr><td>Energy and resources</td><td>Rystad Energy</td></tr>
+<tr><td>Human resources</td><td>TechWolf Analyst Agent</td></tr>
+<tr><td>Software and technology</td><td>Webflow</td></tr>
+<tr><td>Retail and consumer goods</td><td>NielsenIQ, Cloudinary, Contentsquare</td></tr>
+</tbody></table>
+</li>
+<li id="plugin-registry">
+<p><strong>A Unified Microsoft Plugin Registry</strong><span class="tag done">Available in September</span></p>
+<p>The <a href="https://aka.ms/PluginRegistry" target="_blank" rel="noopener">Microsoft Plugin Registry</a> provides a unified catalog for Microsoft, partner, and custom plugins, making capabilities such as skills and connectors available in the Copilot app and Microsoft 365 apps. IT administrators only need to discover and approve them once, after which they can manage them centrally through the Microsoft 365 admin center and Agent 365 and make them available consistently across Copilot experiences. Developers and partners can also publish once and scale deployment while preserving administrator control.</p>
+</li>
+<li id="spfx-chat">
+<p><strong>Bring SharePoint Framework Interactive Components into Chat</strong><span class="tag soon">Rolling out to Frontier in September</span></p>
+<p>SharePoint Framework apps can present interactive interfaces directly in Copilot chat. Without leaving the conversation, users can view information, interact with controls, and perform actions.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LWpWRUI1Sg.png" alt="Using SharePoint Framework interactive components directly in Copilot chat" loading="lazy" width="999" height="528"><figcaption>Using SharePoint Framework interactive components directly in Copilot chat</figcaption></figure>
+</li>
+<li id="sharepoint-workiq">
+<p><strong>SharePoint Tools in Work IQ</strong><span class="tag soon">Rolling out to Frontier in September</span></p>
+<p>SharePoint content and action tools will bring SharePoint content intelligence into Work IQ, enabling Copilot not only to understand relevant content but also to act on it. The original article describes this capability as coming soon and says it is rolling out to Frontier in September.</p>
+</li>
+<li id="mobile-record">
+<p><strong>Record in the Copilot Mobile App</strong><span class="tag done">Available in September</span></p>
+<p>Record supports capturing in-person conversations and voice notes, then generating AI transcriptions and summaries in Copilot Chat. Users can ask follow-up questions, extract action items, or continue working from the recording, making it useful for impromptu discussions, customer visits, and dictated ideas. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=498640" target="_blank" rel="noopener">View the roadmap</a>.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVdtaWo0eQ.jpg" alt="Recording audio in the Copilot mobile app and having Copilot organize the content" loading="lazy" width="999" height="668"><figcaption>Recording audio in the Copilot mobile app and having Copilot organize the content</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="teams-phone">Teams Phone Agent: AI Reception for Incoming Calls</h3>
+<ul class="feat">
+<li id="phone-agent">
+<p><strong>Handle Common Calls and Complete Transfers</strong><span class="tag done">Available in September</span></p>
+<p>Teams Phone Agent is designed for customer service organizations and departments that already use Teams Phone, such as branch offices and IT help desks. It can handle repetitive inquiries, answer frequently asked questions, book or reschedule appointments, and support more than 60 languages. When human assistance is needed, it can transfer the caller to the appropriate department or employee while providing an AI-generated conversation summary, reducing menu navigation and the need for callers to repeat themselves.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXQ3S3Q4ZQ.png" alt="A conversation summary generated for a call by Teams Phone Agent" loading="lazy" width="999" height="598"><figcaption>A conversation summary generated for a call by Teams Phone Agent</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="word">Copilot in Word: Source Citations and Image Adjustments</h3>
+<ul class="feat">
+<li id="word-citations">
+<p><strong>View Source Citations in Responses</strong><span class="tag done">Available in September</span></p>
+<p>Copilot responses in Word now directly display citations to relevant web and work sources, helping users understand the basis for an answer and return to the corresponding sources to verify the content.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LU5uR2ZxVQ.png" alt="Copilot responses in Word show source citations" loading="lazy" width="999" height="508"><figcaption>Copilot responses in Word show source citations</figcaption></figure>
+</li>
+<li id="word-visuals">
+<p><strong>Arrange and Modify Images and Shapes Directly</strong><span class="tag done">Available in September</span></p>
+<p>Users can ask Copilot to adjust visual elements such as images and shapes directly within a Word document, reducing manual arrangement and layout work and making it easier to improve the document's presentation.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LTFKMkszVQ.png" alt="Adjusting images in a Word document with Copilot" loading="lazy" width="999" height="625"><figcaption>Adjusting images in a Word document with Copilot</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="powerpoint">Copilot in PowerPoint: Skills, Connectors, and Background Execution</h3>
+<ul class="feat">
+<li id="ppt-skills">
+<p><strong>Package Multistep Presentation Workflows as Skills</strong></p>
+<p>Skills turn presentation work that requires multiple steps into reusable capabilities, helping Copilot follow an established process without requiring users to rewrite each prompt step by step. <a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/brand-kit-and-skills-in-copilot-in-powerpoint/4554932" target="_blank" rel="noopener">Learn about brand kits and skills</a>.</p>
+<figure><div class="vwrap"><iframe src="https://medius.microsoft.com/Embed/video-nc/7d77b7fe-5000-4bcf-8905-68df70469e13?r=1055532216186" allowfullscreen loading="lazy" title="Demo: Custom skills in PowerPoint (video from Microsoft&#x27;s official article; an internet connection is required for playback)"></iframe></div><figcaption>Demo: Custom skills in PowerPoint (video from Microsoft&#x27;s official article; an internet connection is required for playback)</figcaption></figure>
+</li>
+<li id="ppt-prebuilt">
+<p><strong>Prebuilt Skills</strong><span class="tag done">Available in September</span></p>
+<p>New prebuilt skills address common presentation improvement needs: “Explain this presentation” helps review the narrative, audience fit, and overall flow, while “Sharpen slide titles” rewrites slide titles so they summarize the content of each slide more accurately.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LWozVm9Ccg.png" alt="Prebuilt skills available in PowerPoint" loading="lazy" width="508" height="999"><figcaption>Prebuilt skills available in PowerPoint</figcaption></figure>
+</li>
+<li id="ppt-publishing">
+<p><strong>Administrators Distribute Skills Centrally</strong><span class="tag done">Available in September</span></p>
+<p>Administrators can publish approved skills to selected users, user groups, or the entire organization, so team members no longer need to create or upload the same skill individually.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVE5azJmRg.png" alt="Administrators distribute approved PowerPoint skills to their organization" loading="lazy" width="936" height="771"><figcaption>Administrators distribute approved PowerPoint skills to their organization</figcaption></figure>
+</li>
+<li id="ppt-brand-skills">
+<p><strong>Brand Kits Support Skills</strong><span class="tag soon">Coming in October</span></p>
+<p>Brand managers can place reusable workflow skills in a brand kit alongside the organization's visual standards, allowing presentations to follow both appearance requirements and a consistent workflow. <a href="https://support.microsoft.com/en-us/powerpoint/copilot/brand-skill-support-copilot-powerpoint" target="_blank" rel="noopener">View the brand skill guidance</a>.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXU1VjBhcQ.png" alt="Skills and visual standards in a brand kit" loading="lazy" width="999" height="950"><figcaption>Skills and visual standards in a brand kit</figcaption></figure>
+</li>
+<li id="ppt-connectors">
+<p><strong>Reference Business Materials Through Connectors</strong><span class="tag done">Available in September</span></p>
+<p>When creating slides, users can directly use information from connected apps and data sources, grounding presentations in their organization's existing materials and reducing the need to find and move content across multiple systems.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXhpNUpoeA.png" alt="Selecting connectors and data sources in PowerPoint" loading="lazy" width="674" height="704"><figcaption>Selecting connectors and data sources in PowerPoint</figcaption></figure>
+</li>
+<li id="ppt-background">
+<p><strong>Long-Running Tasks Continue in the Background</strong><span class="tag soon">Coming in October</span></p>
+<p>Copilot can continue long-running tasks after users leave PowerPoint, switch devices, go offline, or finish work for the day, and notify them when the work is complete or requires their attention. The experience spans desktop, web, and mobile.</p>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="sharepoint">Copilot in SharePoint Is Generally Available</h3>
+<ul class="feat">
+<li id="sharepoint-ga">
+<p><strong>Create, Organize, and Understand Content in Sites and Document Libraries</strong><span class="tag done">Available in September; generally available</span></p>
+<p>Copilot in SharePoint can help create and organize content directly in sites and document libraries, answer questions grounded in SharePoint, generate document library metadata, and use skills to reuse repetitive workflows. Advanced capabilities also include image generation and editing, AI site analytics reports, and near-real-time metadata autofill. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=501451" target="_blank" rel="noopener">View the roadmap</a>.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LTNOQjZNbg.png" alt="Copilot in SharePoint sites and document libraries" loading="lazy" width="999" height="560"><figcaption>Copilot in SharePoint sites and document libraries</figcaption></figure>
+</li>
+<li id="sharepoint-search">
+<p><strong>Copilot Search Becomes the Default Search in SharePoint and OneDrive</strong><span class="tag soon">Rolling out to Frontier in September</span></p>
+<p>The new default search combines natural-language understanding, semantic retrieval, and AI-generated answers. Within the supported content scope, it retrieves information according to users' existing permissions and generates answers, helping them find what they need more directly.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LWc2eWh0ag.png" alt="The Copilot-powered search experience in SharePoint" loading="lazy" width="998" height="561"><figcaption>The Copilot-powered search experience in SharePoint</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="onedrive">Copilot in OneDrive Is Generally Available</h3>
+<ul class="feat">
+<li id="onedrive-ga">
+<p><strong>A Content Experience Consistent with SharePoint</strong><span class="tag done">Available in September; generally available</span></p>
+<p>The rebuilt Copilot in OneDrive uses the same foundation as Copilot in SharePoint, providing a more consistent experience for creating and organizing content and working with files, so work is not fragmented based on where content is stored. Its licensing is the same as Copilot in SharePoint; the original article does not list specific licensing plans.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVBWZ2NrRA.png" alt="The Copilot interface in a OneDrive folder" loading="lazy" width="999" height="590"><figcaption>The Copilot interface in a OneDrive folder</figcaption></figure>
+</li>
+</ul>
+</section>
+<h2>IT admin capabilities</h2>
+<section class="card">
+<h3 id="authoritative">Microsoft 365 Admin Center: Authoritative Source Management</h3>
+<ul class="feat">
+<li id="authoritative-sources">
+<p><strong>Centrally Designate Authoritative SharePoint Sites for the Organization</strong><span class="tag done">Available in September</span></p>
+<p>Administrators can mark up to 100 SharePoint sites as authoritative sources for Copilot Search, identifying verified official content to improve the relevance and trustworthiness of Copilot Search and Chat results. The centralized management interface supports viewing, adding, and removing sources, as well as importing and exporting them in bulk. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=503553" target="_blank" rel="noopener">View the roadmap</a>.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXlNZjIzNQ.png" alt="Authoritative source management in the Microsoft 365 admin center" loading="lazy" width="999" height="562"><figcaption>Authoritative source management in the Microsoft 365 admin center</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="surveys">Copilot Dashboard: Targeted Pulse Surveys</h3>
+<ul class="feat">
+<li id="targeted-surveys">
+<p><strong>Combine Adoption Data with Targeted Feedback</strong><span class="tag done">Available in September</span></p>
+<p>Leaders can use dynamic survey lists to launch targeted Pulse surveys: audiences are generated from Copilot adoption data and refined with existing criteria, reducing manual maintenance of recipient lists. Combining employee sentiment with adoption information helps assess the experience and identify opportunities to increase adoption. To protect privacy, surveys use aggregated, population-level reporting rather than showing individual usage. <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?id=568072" target="_blank" rel="noopener">View the roadmap</a>.</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVg2ZGlhag.jpg" alt="Survey questions and feedback in the Copilot Dashboard" loading="lazy" width="999" height="595"><figcaption>Survey questions and feedback in the Copilot Dashboard</figcaption></figure>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LU9lVWxGeQ.jpg" alt="Configuring a Copilot survey with a targeted audience" loading="lazy" width="700" height="418"><figcaption>Configuring a Copilot survey with a targeted audience</figcaption></figure>
+</li>
+</ul>
+</section>
+<div class="note">
+<strong>Did you know?</strong> The <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" rel="noopener">AI at Work Roadmap</a> provides the latest updates on productivity apps and intelligent cloud services; the <a href="https://learn.microsoft.com/copilot/microsoft-365/release-notes?tabs=all" target="_blank" rel="noopener">Microsoft Copilot release notes</a> list features that have reached general availability in Current Channel and their availability across platforms. Check them regularly to learn which features are in development, rolling out soon, or already available. Please note that all timelines mentioned in this article are tentative and subject to change.
+</div>
+<footer>
+<p>This English edition presents the same independently worded feature summary as the Chinese editions, not a verbatim copy of the official article. Refer to the original for authoritative details, availability, and timelines.<br>
+Original title: <em>What’s New in Microsoft Copilot | September 2026</em>. By Daniel_Vargas, published on Microsoft Tech Community (September 30, 2026; updated October 8, 2026).<br>
+Original article: <a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107" target="_blank" rel="noopener">techcommunity.microsoft.com</a></p>
+</footer>
+  </main>
+</div>
+
+</div>
+<a class="back-to-overview" href="#monthly-overview" aria-label="Back to this month at a glance" title="Back to this month at a glance">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 7 5-5 5 5M12 2v12M4 17h16M4 22h16"/></svg>
+  <span>Overview</span>
+</a>
+</body>
+</html>

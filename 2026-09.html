@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Copilot 新功能速览 | 2026 年 9 月</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/language-switcher.css">
+</head>
+<body class="page-month">
+<div class="wrap">
+<nav class="language-switcher" aria-label="语言切换">
+<a href="2026-09.html" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a>
+<a href="2026-09-tc.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+<a href="2026-09-en.html" lang="en" hreflang="en">English</a>
+</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 id="month-navigation-title">月度导航</h2>
+    <nav class="month-links" aria-labelledby="month-navigation-title">
+      <a href="2026-09.html" aria-current="page">2026 年 9 月</a>
+      <a href="2026-08.html">2026 年 8 月</a>
+      <a href="2026-07.html">2026 年 7 月</a>
+      <a href="2026-06.html">2026 年 6 月</a>
+      <a href="2026-05.html">2026 年 5 月</a>
+      <a href="2026-04.html">2026 年 4 月</a>
+    </nav>
+    <a class="back" href="index.html">&#8592; 返回月份总目录</a>
+  </aside>
+  <main class="content" id="main">
+
+
+<header class="hero">
+<p class="kicker">MICROSOFT COPILOT 博客</p>
+<h1>Microsoft Copilot 新功能速览 | 2026 年 9 月</h1>
+<p class="meta">作者：Daniel_Vargas · 发布日期：2026 年 9 月 30 日 · 更新日期：2026 年 10 月 8 日 · <a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107" target="_blank" rel="noopener">查看英文原文</a></p>
+</header>
+<p class="lead">本期整理 Microsoft Copilot 2026 年 9 月官方月度更新，覆盖聊天与移动端体验、插件和 Work IQ、Teams Phone、Word、PowerPoint、SharePoint、OneDrive，以及管理员的权威来源和定向调查能力。下文按官方文章顺序归纳功能与推出计划，所有时间均以文章表述为准。</p>
+<div class="note">官方此前发布了<a href="https://aka.ms/AA13g7uq" target="_blank" rel="noopener">新版 Copilot：Home、Code 和 Autopilot</a>的介绍，说明如何连接现有工具并构建、定制和扩展工作中的 AI。本篇继续整理除此之外的月度产品更新。</div>
+<figure class="banner"><img src="assets/2026-09/bS00NTU5MTA3LThENU0xaQ.png" alt="Microsoft Copilot 九月更新文章配图" loading="lazy" width="999" height="208"></figure>
+<nav class="toc" id="monthly-overview" aria-labelledby="monthly-overview-title" tabindex="-1">
+<h2 id="monthly-overview-title">本月更新概览</h2>
+<strong>面向用户的能力</strong>
+<ul>
+<li><a href="#chat">Copilot Chat：全新设计与功能增强</a></li>
+<li><a href="#plugins-workiq">Copilot 应用：插件、连接器与 Work IQ 更新</a></li>
+<li><a href="#teams-phone">Teams Phone Agent：面向来电的 AI 接待</a></li>
+<li><a href="#word">Word 中的 Copilot：来源引用与图像调整</a></li>
+<li><a href="#powerpoint">PowerPoint 中的 Copilot：技能、连接器与后台执行</a></li>
+<li><a href="#sharepoint">SharePoint 中的 Copilot 正式发布</a></li>
+<li><a href="#onedrive">OneDrive 中的 Copilot 正式发布</a></li>
+</ul>
+<strong>面向 IT 管理员的能力</strong>
+<ul>
+<li><a href="#authoritative">Microsoft 365 管理中心：权威来源管理</a></li>
+<li><a href="#surveys">Copilot 仪表板：定向 Pulse 调查</a></li>
+</ul>
+</nav>
+<h2>面向用户的能力</h2>
+<section class="card">
+<h3 id="chat">Copilot Chat：全新设计与功能增强</h3>
+<ul class="feat">
+<li id="chat-design">
+<p><strong>Teams 与 Outlook 中的 Copilot 焕新</strong><span class="tag done">9 月已推出</span></p>
+<p>Teams 和 Outlook 中的 Copilot 正在采用与 Copilot 应用一致的新设计，简化导航与聊天操作，并提供新的工作组织方式。此次改版同时覆盖全屏 Copilot 和应用内的 Copilot 侧边窗格。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LUdCM1BNbw.png" alt="Teams 中焕新的 Copilot 聊天界面" loading="lazy" width="999" height="626"><figcaption>Teams 中焕新的 Copilot 聊天界面</figcaption></figure>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LTRtaEptNg.png" alt="Teams Copilot 标签页中的新版体验" loading="lazy" width="999" height="626"><figcaption>Teams Copilot 标签页中的新版体验</figcaption></figure>
+</li>
+<li id="edge-new-tab">
+<p><strong>Edge 中的 Copilot 新标签页</strong><span class="tag soon">10 月推出</span></p>
+<p>新的 Copilot 标签页将在一个搜索框中整合搜索、聊天与网页探索，同时呈现 Copilot 推荐操作及精选工作内容，减少在不同入口之间切换。<a href="https://www.microsoft.com/microsoft-365/roadmap?id=566703" target="_blank" rel="noopener">查看路线图</a>。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LUtCNlhUaA.png" alt="Microsoft Edge 中集搜索、聊天与工作内容于一处的 Copilot 新标签页" loading="lazy" width="998" height="581"><figcaption>Microsoft Edge 中集搜索、聊天与工作内容于一处的 Copilot 新标签页</figcaption></figure>
+</li>
+<li id="inline-agents-skills">
+<p><strong>在提示词中直接调用代理与技能</strong><span class="tag done">9 月已推出</span></p>
+<p>撰写提示词时，用户可以用 <code>/</code> 调用代理、用 <code>@</code> 调用技能，在不中断输入流程的情况下加入专门能力。<a href="https://www.microsoft.com/microsoft-365/roadmap?id=569213" target="_blank" rel="noopener">查看路线图</a>。</p>
+</li>
+<li id="scanned-pdf">
+<p><strong>更准确地匹配扫描 PDF 内容</strong><span class="tag done">9 月已推出</span></p>
+<p>Copilot Chat 改进了对扫描 PDF 的搜索结果匹配，帮助用户更快定位相关资料，减少逐页查找的时间。<a href="https://www.microsoft.com/microsoft-365/roadmap?searchterms=copilot+chat+can+now+better+match+search+results#Roadmap" target="_blank" rel="noopener">查看路线图</a>。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVpOMkprdQ.png" alt="Copilot Chat 从扫描 PDF 中匹配相关内容" loading="lazy" width="999" height="550"><figcaption>Copilot Chat 从扫描 PDF 中匹配相关内容</figcaption></figure>
+</li>
+<li id="android-editing">
+<p><strong>Android 端的 Copilot 编辑</strong><span class="tag done">Android 9 月已推出；iOS 已于今年早些时候推出</span></p>
+<p>Android 版 Word、PowerPoint 和 Excel 现在支持借助 Copilot 修改内容，让用户在移动设备上也能推进文档、演示文稿与电子表格工作。相应能力已于 2026 年早些时候在 iOS 推出。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXIwTWtYOA.png" alt="Android 版 Word 中的 Copilot 编辑体验" loading="lazy" width="999" height="562"><figcaption>Android 版 Word 中的 Copilot 编辑体验</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="plugins-workiq">Copilot 应用：插件、连接器与 Work IQ 更新</h3>
+<ul class="feat">
+<li id="marketplace">
+<p><strong>新增连接器、插件与代理</strong></p>
+<p>更多业务系统与行业知识正在接入 Copilot。官方本月列出以下 33 项连接器、插件或代理，覆盖八个行业类别；文章未为每一项分别标注推出日期。可通过 <a href="https://marketplace.microsoft.com/en-us/" target="_blank" rel="noopener">Microsoft Marketplace</a> 进一步了解。</p>
+<table><thead><tr><th>行业</th><th>连接器、插件与代理</th></tr></thead><tbody>
+<tr><td>工业与制造</td><td>Autodesk、Resilinic、Vista Finance by Trimble</td></tr>
+<tr><td>专业与商业服务</td><td>askpolly</td></tr>
+<tr><td>金融服务</td><td>Fiscal AI、D&amp;B Risk Analytics、D&amp;B Finance Analytics、Zacks、MT Newswires、PrivCo、S&amp;P Global Kensho、Square、Morningstar Credit Analytics</td></tr>
+<tr><td>医疗健康与生命科学</td><td>AMASS、Cortellis Regulatory Intelligence、SciLeads、Causaly、BioRender、ClinicalTrials.gov、PubMed、PopHive、bioRxiv、DrugBank、CAS、Open Targets、NPI Registry、MedlinePlus</td></tr>
+<tr><td>能源与资源</td><td>Rystad Energy</td></tr>
+<tr><td>人力资源</td><td>TechWolf Analyst Agent</td></tr>
+<tr><td>软件与科技</td><td>Webflow</td></tr>
+<tr><td>零售与消费品</td><td>NielsenIQ、Cloudinary、Contentsquare</td></tr>
+</tbody></table>
+</li>
+<li id="plugin-registry">
+<p><strong>统一的 Microsoft 插件注册表</strong><span class="tag done">9 月已推出</span></p>
+<p><a href="https://aka.ms/PluginRegistry" target="_blank" rel="noopener">Microsoft 插件注册表</a>为微软、合作伙伴及自定义插件提供统一目录，支持在 Copilot 应用和 Microsoft 365 应用中提供技能、连接器等能力。IT 管理员只需发现并批准一次，即可通过 Microsoft 365 管理中心和 Agent 365 集中管理，并在各 Copilot 体验中一致地开放。开发者与合作伙伴也能一次发布、扩展部署，同时保留管理员的管控。</p>
+</li>
+<li id="spfx-chat">
+<p><strong>将 SharePoint Framework 交互组件带入聊天</strong><span class="tag soon">9 月向 Frontier 推出</span></p>
+<p>SharePoint Framework 应用可以直接在 Copilot 聊天中呈现交互界面。用户无需离开对话，即可查看信息、操作控件和执行动作。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LWpWRUI1Sg.png" alt="在 Copilot 聊天中直接使用 SharePoint Framework 交互组件" loading="lazy" width="999" height="528"><figcaption>在 Copilot 聊天中直接使用 SharePoint Framework 交互组件</figcaption></figure>
+</li>
+<li id="sharepoint-workiq">
+<p><strong>Work IQ 中的 SharePoint 工具</strong><span class="tag soon">9 月向 Frontier 推出</span></p>
+<p>SharePoint 内容与操作工具将把 SharePoint 的内容智能带入 Work IQ，让 Copilot 不仅能够理解相关内容，还能围绕内容采取行动。原文将该能力描述为即将提供，并注明九月向 Frontier 推出。</p>
+</li>
+<li id="mobile-record">
+<p><strong>Copilot 移动应用中的 Record</strong><span class="tag done">9 月已推出</span></p>
+<p>Record 支持记录线下交谈和语音笔记，并在 Copilot Chat 中生成 AI 转录与摘要。用户可以继续追问、提取待办事项，或基于记录推进工作，适用于临时讨论、客户拜访及口述想法等场景。<a href="https://www.microsoft.com/microsoft-365/roadmap?id=498640" target="_blank" rel="noopener">查看路线图</a>。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVdtaWo0eQ.jpg" alt="在 Copilot 移动应用中录音，并将内容交给 Copilot 整理" loading="lazy" width="999" height="668"><figcaption>在 Copilot 移动应用中录音，并将内容交给 Copilot 整理</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="teams-phone">Teams Phone Agent：面向来电的 AI 接待</h3>
+<ul class="feat">
+<li id="phone-agent">
+<p><strong>接听常见来电并完成转接</strong><span class="tag done">9 月已推出</span></p>
+<p>Teams Phone Agent 面向已使用 Teams Phone 的客户服务组织和部门，例如分支机构及 IT 服务台。它可以处理重复性咨询、回答常见问题、预约或改约，并支持超过 60 种语言。需要人工介入时，可将来电转给合适的部门或员工，同时提供 AI 生成的对话摘要，让来电者减少菜单操作和重复解释。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXQ3S3Q4ZQ.png" alt="Teams Phone Agent 为通话生成的对话摘要" loading="lazy" width="999" height="598"><figcaption>Teams Phone Agent 为通话生成的对话摘要</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="word">Word 中的 Copilot：来源引用与图像调整</h3>
+<ul class="feat">
+<li id="word-citations">
+<p><strong>在回答中查看来源引用</strong><span class="tag done">9 月已推出</span></p>
+<p>Copilot 在 Word 中的回复现在会直接显示相关网页与工作资料的引用，帮助用户了解回答依据，并回到相应来源核对内容。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LU5uR2ZxVQ.png" alt="Word 中的 Copilot 回复显示来源引用" loading="lazy" width="999" height="508"><figcaption>Word 中的 Copilot 回复显示来源引用</figcaption></figure>
+</li>
+<li id="word-visuals">
+<p><strong>直接排列和修改图片与形状</strong><span class="tag done">9 月已推出</span></p>
+<p>用户可以让 Copilot 在 Word 文档内直接调整图片和形状等视觉元素，减少手动排列与布局操作，更轻松地改善文档呈现效果。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LTFKMkszVQ.png" alt="通过 Copilot 调整 Word 文档中的图片" loading="lazy" width="999" height="625"><figcaption>通过 Copilot 调整 Word 文档中的图片</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="powerpoint">PowerPoint 中的 Copilot：技能、连接器与后台执行</h3>
+<ul class="feat">
+<li id="ppt-skills">
+<p><strong>用技能封装多步骤演示文稿流程</strong></p>
+<p>技能把需要多个步骤的演示文稿工作整理为可重复使用的能力，帮助 Copilot 按既定流程完成任务，用户不必逐步重写提示词。<a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/brand-kit-and-skills-in-copilot-in-powerpoint/4554932" target="_blank" rel="noopener">了解品牌套件与技能</a>。</p>
+<figure><div class="vwrap"><iframe src="https://medius.microsoft.com/Embed/video-nc/7d77b7fe-5000-4bcf-8905-68df70469e13?r=1055532216186" allowfullscreen loading="lazy" title="演示：PowerPoint 自定义技能（视频来自微软官方文章，播放需联网）"></iframe></div><figcaption>演示：PowerPoint 自定义技能（视频来自微软官方文章，播放需联网）</figcaption></figure>
+</li>
+<li id="ppt-prebuilt">
+<p><strong>预置技能</strong><span class="tag done">9 月已推出</span></p>
+<p>新的预置技能面向常见的演示文稿改进需求：「Explain this presentation」帮助检查叙事、受众适配与整体流程；「Sharpen slide titles」则改写幻灯片标题，使标题更准确地概括该页内容。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LWozVm9Ccg.png" alt="PowerPoint 中可用的预置技能" loading="lazy" width="508" height="999"><figcaption>PowerPoint 中可用的预置技能</figcaption></figure>
+</li>
+<li id="ppt-publishing">
+<p><strong>由管理员统一分发技能</strong><span class="tag done">9 月已推出</span></p>
+<p>管理员可以把经过批准的技能发布给指定用户、用户组或整个组织，团队成员不必再分别创建或上传同一项技能。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVE5azJmRg.png" alt="管理员向组织分发经过批准的 PowerPoint 技能" loading="lazy" width="936" height="771"><figcaption>管理员向组织分发经过批准的 PowerPoint 技能</figcaption></figure>
+</li>
+<li id="ppt-brand-skills">
+<p><strong>品牌套件支持技能</strong><span class="tag soon">10 月推出</span></p>
+<p>品牌管理者可以把可复用的流程技能与组织的视觉规范一同放入品牌套件，让演示文稿既遵循外观要求，也采用统一的工作流程。<a href="https://support.microsoft.com/en-us/powerpoint/copilot/brand-skill-support-copilot-powerpoint" target="_blank" rel="noopener">查看品牌技能说明</a>。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXU1VjBhcQ.png" alt="品牌套件中的技能与视觉规范" loading="lazy" width="999" height="950"><figcaption>品牌套件中的技能与视觉规范</figcaption></figure>
+</li>
+<li id="ppt-connectors">
+<p><strong>通过连接器引用业务资料</strong><span class="tag done">9 月已推出</span></p>
+<p>用户在创建幻灯片时，可以直接使用已连接应用和数据源中的信息，使演示文稿基于组织已有资料接地，减少在多个系统间查找和搬运内容。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXhpNUpoeA.png" alt="PowerPoint 中的连接器与数据源选择" loading="lazy" width="674" height="704"><figcaption>PowerPoint 中的连接器与数据源选择</figcaption></figure>
+</li>
+<li id="ppt-background">
+<p><strong>长时间任务在后台继续运行</strong><span class="tag soon">10 月推出</span></p>
+<p>用户离开 PowerPoint、切换设备、离线或结束当天工作后，Copilot 仍可继续执行长时间任务，并在完成或需要用户关注时发出通知。该体验覆盖桌面、Web 和移动端。</p>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="sharepoint">SharePoint 中的 Copilot 正式发布</h3>
+<ul class="feat">
+<li id="sharepoint-ga">
+<p><strong>在站点和文档库中创建、组织并理解内容</strong><span class="tag done">9 月已推出，正式发布</span></p>
+<p>Copilot in SharePoint 可直接在站点与文档库中协助创建和整理内容、回答基于 SharePoint 的问题、生成文档库元数据，并用技能复用重复性流程。高级能力还包括图像生成与编辑、AI 站点分析报告，以及近实时的元数据自动填充。<a href="https://www.microsoft.com/microsoft-365/roadmap?id=501451" target="_blank" rel="noopener">查看路线图</a>。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LTNOQjZNbg.png" alt="SharePoint 站点和文档库中的 Copilot" loading="lazy" width="999" height="560"><figcaption>SharePoint 站点和文档库中的 Copilot</figcaption></figure>
+</li>
+<li id="sharepoint-search">
+<p><strong>Copilot Search 成为 SharePoint 与 OneDrive 的默认搜索</strong><span class="tag soon">9 月向 Frontier 推出</span></p>
+<p>新的默认搜索结合自然语言理解、语义检索与 AI 回答，在受支持内容范围内依据用户已有权限获取资料并生成答案，帮助用户更直接地找到所需信息。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LWc2eWh0ag.png" alt="SharePoint 中由 Copilot 提供支持的搜索体验" loading="lazy" width="998" height="561"><figcaption>SharePoint 中由 Copilot 提供支持的搜索体验</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="onedrive">OneDrive 中的 Copilot 正式发布</h3>
+<ul class="feat">
+<li id="onedrive-ga">
+<p><strong>与 SharePoint 一致的内容体验</strong><span class="tag done">9 月已推出，正式发布</span></p>
+<p>重建后的 Copilot in OneDrive 与 Copilot in SharePoint 使用相同基础，提供更一致的内容创建、组织和文件使用体验，让工作不因内容所在位置不同而割裂。其许可方式与 Copilot in SharePoint 一致；原文未列出具体许可方案。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVBWZ2NrRA.png" alt="OneDrive 文件夹中的 Copilot 界面" loading="lazy" width="999" height="590"><figcaption>OneDrive 文件夹中的 Copilot 界面</figcaption></figure>
+</li>
+</ul>
+</section>
+<h2>面向 IT 管理员的能力</h2>
+<section class="card">
+<h3 id="authoritative">Microsoft 365 管理中心：权威来源管理</h3>
+<ul class="feat">
+<li id="authoritative-sources">
+<p><strong>集中指定组织的权威 SharePoint 站点</strong><span class="tag done">9 月已推出</span></p>
+<p>管理员最多可将 100 个 SharePoint 站点标记为 Copilot Search 的权威来源，指明经过核实的官方内容，以提升 Copilot Search 与 Chat 结果的相关性和可信度。集中式管理界面支持查看、添加、移除，以及批量导入和导出来源。<a href="https://www.microsoft.com/microsoft-365/roadmap?id=503553" target="_blank" rel="noopener">查看路线图</a>。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LXlNZjIzNQ.png" alt="Microsoft 365 管理中心的权威来源管理" loading="lazy" width="999" height="562"><figcaption>Microsoft 365 管理中心的权威来源管理</figcaption></figure>
+</li>
+</ul>
+</section>
+<section class="card">
+<h3 id="surveys">Copilot 仪表板：定向 Pulse 调查</h3>
+<ul class="feat">
+<li id="targeted-surveys">
+<p><strong>结合采用数据收集有针对性的反馈</strong><span class="tag done">9 月已推出</span></p>
+<p>负责人可以使用动态调查名单发起定向 Pulse 调查：依据 Copilot 采用数据生成受众，并使用既有条件筛选，减少手工维护收件人名单。将员工感受与采用信息结合，有助于评估体验、发现提升采用率的机会。调查采用聚合的人群级报表保护隐私，而非呈现个人使用情况。<a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?id=568072" target="_blank" rel="noopener">查看路线图</a>。</p>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LVg2ZGlhag.jpg" alt="Copilot 仪表板中的调查问题与反馈" loading="lazy" width="999" height="595"><figcaption>Copilot 仪表板中的调查问题与反馈</figcaption></figure>
+<figure><img src="assets/2026-09/bS00NTU5MTA3LU9lVWxGeQ.jpg" alt="通过定向受众配置 Copilot 调查" loading="lazy" width="700" height="418"><figcaption>通过定向受众配置 Copilot 调查</figcaption></figure>
+</li>
+</ul>
+</section>
+<div class="note">
+<strong>你知道吗？</strong> <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" rel="noopener">AI at Work 路线图</a> 提供生产力应用和智能云服务的最新动态；<a href="https://learn.microsoft.com/copilot/microsoft-365/release-notes?tabs=all" target="_blank" rel="noopener">Microsoft Copilot 发行说明</a> 则列出了当前频道中已经正式发布的功能及各平台的可用情况。建议定期查看，了解哪些功能正在开发、即将推出或已经可用。请注意，本文提及的时间均为暂定，可能会有调整。
+</div>
+<footer>
+<p>本页为根据官方文章整理的中文功能概览，并非逐字译文；内容、可用范围及推出时间以官方原文为准。<br>
+原文标题：<em>What’s New in Microsoft Copilot | September 2026</em>. 作者 Daniel_Vargas，发布于 Microsoft Tech Community（2026 年 9 月 30 日，2026 年 10 月 8 日更新）。<br>
+原文链接：<a href="https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107" target="_blank" rel="noopener">techcommunity.microsoft.com</a></p>
+</footer>
+  </main>
+</div>
+
+</div>
+<a class="back-to-overview" href="#monthly-overview" aria-label="返回本月更新概览" title="返回本月更新概览">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 7 5-5 5 5M12 2v12M4 17h16M4 22h16"/></svg>
+  <span>返回概览</span>
+</a>
+</body>
+</html>
